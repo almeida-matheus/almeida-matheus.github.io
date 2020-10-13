@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="matheus almeida costa,developer,programmer,python,hacking,offensive security">
+  <meta name="description" content="matheus almeida costa site">
+  <!-- bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- CSS customizado-->
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+  <!-- icones font awesome-->
+  <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+  <!-- bootstrap javascript-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <!--javascript customizado-->
+  <script src="js/main.js"></script>
+  <!--logo-->
+  <link rel="icon" href="./img/logo_white.png ">
+  <!--titulo-->
+  <title>Matheus Almeida Costa Portfolio</title>
+</head>
+
+<body>
+
+  <div class="menu-geral" id="topo">
+    <div class="container">
+      <!--fixed-top: menu sempre fixo > tem que colocar um padding top no body pq tudo subiu-->
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#topo">matheus almeida</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon">
+            <!--pra aparecer o icone de menu precisa do navbar-light, tirei isso pq nao quero o texto branco, entao tem q incluir o span em baixo-->
+            <span class="sr-only">abrir ou fechar menu</span> <i class=" pt-1 text-white fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#sobre-mim">sobre mim<span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos">projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">contato</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link d-none d-lg-block">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">english</a>
+            </li>
+            -->
+
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </div>
+  <a>bord-shadow</a>
+
+  <section id="main">
+    <div class="jumbotron jumbotron-fluid text-center">
+      <div class="container my-5 py-5">
+        <img class="profile-photo img-fluid" src="./img/profile.jpeg" alt="Matheus Almeida Costa"
+          title="Matheus Almeida Costa">
+        <h1 class="h2 text-white">Matheus Almeida Costa</h1>
+        <p class="text-grey font-weight-bold py-2">Cyber Security - Web Development - Computer Network</p>
+        <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/matheus-almeida-costa/"><i
+            class="text-white pl-2 pl-lg-4 icon fab fa-linkedin fa-2x"></i></a>
+        <a target="_blank" title="GitHub" href="https://github.com/almeida-matheus"><i
+            class="text-white pl-2 pl-lg-4 icon fab fa-github fa-2x"></i></a>
+        <a target="_blank" title="Blog" href="https://almeidamatheus.netlify.app"><i
+            class="text-white pl-2 pl-lg-4 icon fas fa-globe-americas fa-2x"></i></a>
+        <!--<a target="_blank" title="Medium" href="https://medium.com/@almeida_matheus"><i
+            class="text-white pl-2 pl-lg-4 icon fab fa-medium fa-2x"></i></a>-->
+        <a target="_blank" title="Telegram" href="https://t.me/almeidamatheus"><i
+            class="text-white pl-2 pl-lg-4 icon fab fa-telegram fa-2x"></i></a>
+        <a target="_blank" title="Instagram" href="https://www.instagram.com/matheuscbjr/"><i
+            class="text-white pl-2 pl-lg-4 icon fab fa-instagram fa-2x"></i></a>
+        <a target="_blank" title="Steam" href="https://steamcommunity.com/id/shiryunk/"><i
+            class="text-white pl-2 pl-lg-4 icon fab fa-steam fa-2x"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <hr id="sobre-mim">
+
+  <div class="jumbotron text-center pt-0 mt-0">
+    <div class="container">
+      <h1 class="display-4 text-white my-5">Sobre mim</h1>
+      <p class="lead text-white">
+        Tenho formação como técnico em eletrônica e atualmente estou graduando em Segurança da Informação.<br>
+        Sou apaixonado por tecnologia e estou sempre estudando e aperfeiçoando meus conhecimentos na área de Tecnologia da Informação
+        (programação, redes de computadores, sistemas operacionais, hacking, computação em nuvem, hardwares)
+      </p>
+    </div>
+  </div>
+  <hr id="habilidades">
+  <div class="container mt-5">
+    <h1 class="display-4 text-center text-white text-wrap mb-5">Habilidades</h1>
+    <!--CARDS-->
+    <!--só centraliza quando estiver no tamanho small (sm)-->
+    <div class="row justify-content-sm-center">
+
+      <div class="col-sm-6 col-md-3 mb-5">
+        <div class="card background-black" style="border: none;">
+          <div class="text-center">
+            <img class="card-img-top" src="img/FAVPNG_dev_white.png" style="height: 150px; width: 150px;">
+          </div>
+          <div class="card-body text-center text-white">
+            <h4 class="card-title text-nowrap">Desenvolvimento</h4>
+            <!--para o modal funcionar : data-toggle="modal" data-target="#siteModal"-->
+            <a href="#" data-toggle="modal" data-target="#dev" class="card-link">
+              <button type="button" class="btn btn-sm btn-outline-light"> + Informações</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3 mb-5">
+        <div class="card background-black" style="border: none;">
+          <div class="text-center">
+            <img class="card-img-top" src="img/FAVPNG_pentest_white.png" style="height: 150px; width: 150px;">
+          </div>
+          <div class="card-body text-center text-white">
+            <h4 class="card-title text-nowrap">Pentest</h4>
+            <!--para o modal funcionar : data-toggle="modal" data-target="#siteModal"-->
+            <a href="#" data-toggle="modal" data-target="#pentest" class="card-link">
+              <button type="button" class="btn btn-sm btn-outline-light"> + Informações</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3 mb-5">
+        <div class="card background-black" style="border: none;">
+          <div class="text-center">
+            <img class="card-img-top" src="img/FAVPNG_networking_white.png" style="height: 150px; width: 150px;">
+          </div>
+          <div class="card-body text-center text-white">
+            <h4 class="card-title text-nowrap">Redes</h4>
+            <!--para o modal funcionar : data-toggle="modal" data-target="#siteModal"-->
+            <a href="#" data-toggle="modal" data-target="#network" class="card-link">
+              <button type="button" class="btn btn-sm btn-outline-light"> + Informações</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3 mb-5">
+        <div class="card background-black" style="border: none;">
+          <div class="text-center">
+            <img class="card-img-top" src="img/FAVPNG_other_black.png" style="height: 150px; width: 150px;">
+          </div>
+          <div class="card-body text-center text-white">
+            <h4 class="card-title text-nowrap">Outros</h4>
+            <!--para o modal funcionar : data-toggle="modal" data-target="#siteModal"-->
+            <a href="#" data-toggle="modal" data-target="#other" class="card-link">
+              <button type="button" class="btn btn-sm btn-outline-light"> + Informações</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <hr id="projetos">
+
+  <!--[CARDS]-->
+  <div class="album pb-5 text-white">
+    <h1 class="display-4 text-center my-5">Projetos</h1>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-6 col-md-4 background-black">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="img/blog.png" alt="projeto"
+            style="height: 160px; width: 100%; display: block; border-bottom: 1px solid rgb(255, 255, 255);
+            " data-holder-rendered="true">
+            <div class="card-body background-black">
+              <h2 class="card-title h5 text-center">Blog pessoal</h2>
+              <p class="card-text">Nesse blog eu compartilho assuntos interessantes que eu estudo</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="https://almeidamatheus.netlify.app/" target="_blank"><button type="button"
+                      class="btn btn-sm btn-outline-light">Projeto</button></a>
+                  <a href="https://github.com/almeida-matheus/blog" target="_blank"><button type="button"
+                      class="btn btn-sm btn-outline-light">Código</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 background-black">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="img/sites.png" alt="projeto"
+              style="height: 160px; width: 100%; display: block; border-bottom: 1px solid rgb(255, 255, 255);" data-holder-rendered="true">
+            <div class="card-body background-black">
+              <h2 class="card-title h5 text-center">Sites</h2>
+              <p class="card-text">Alguns sites que eu desenvolvi para aprender front-end</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="https://almeida-matheus.github.io/front-end/" target="_blank"><button type="button"
+                      class="btn btn-sm btn-outline-light">Projeto</button></a>
+                  <a href="https://github.com/almeida-matheus/front-end" target="_blank"><button type="button"
+                      class="btn btn-sm btn-outline-light">Código</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 background-black">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="img/gerenciador_contas.png" alt="projeto"
+              style="height: 160px; width: 100%; display: block; border-bottom: 1px solid rgb(255, 255, 255);
+              " data-holder-rendered="true">
+            <div class="card-body background-black">
+              <h2 class="card-title h5 text-center">Gerenciador de contas</h2>
+              <p class="card-text">A finalidade é guardar login e senhas de serviços</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/almeida-matheus/gerenciador-de-contas" target="_blank"><button type="button"
+                      class="btn btn-sm btn-outline-light">Projeto</button></a>
+                  <a href="https://github.com/almeida-matheus/gerenciador-de-contas" target="_blank"><button type="button"
+                      class="btn btn-sm btn-outline-light">Código</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="jumbotron text-center mt-3 pt-4 pb-0 mb-0">
+        <h1 class="h4 text-white pb-1">Confira mais projetos no meu GitHub</h1>
+        <a href="https://github.com/almeida-matheus" target="_blank">
+          <button type="button" class="btn btn-md btn-outline-light"><i class="fab fa-github pr-2"></i>GitHub</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--**FINAL** [CARDS]-->
+  <hr id="contato">
+
+  <!--[FORMS] form grid (form row)-->
+  <div class="container mt-5">
+    <h1 class="display-4 text-center text-white">Contato</h1>
+    <div class="row justify-content-center mb-1">
+      <div class="col-12 col-md-9">
+        <form action="https://formspree.io/f/mrgoegbl" method="POST" id="my-form">
+          <div class="form-row">
+
+            <div class="form-group col-12 col-sm-6 mt-3">
+              <label for="name" class="text-white">Nome</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Nome">
+            </div>
+
+            <div class="form-group col-12 col-sm-6 mt-3">
+              <label for="email" class="text-white">E-mail</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="E-mail">
+            </div>
+
+            <div class="form-group col-12 mt-3">
+              <label for="message" class="text-white">Mensagem</label>
+              <textarea name="message" id="message" class="form-control" rows="6" placeholder="..."></textarea>
+            </div>
+
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-lg btn-outline-light mt-1 text-center">Enviar mensagem</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="status"></div>
+  </div>
+  <!--**FINAL** [FORMS] form grid (form row)-->
+
+  <div class="jumbotron text-center mt-3 pt-4 pb-0">
+    <div class="container">
+      <h1 class="h4 text-white ">Disponível para oportunidades</h1>
+      <h1 class="h5"><a href="mailto:almeidamatheus.m@gmail.com">almeidamatheus.m@gmail.com</a></h1>
+    </div>
+  </div>
+
+  <div class="text-center py-0">
+    <h1 class="texto-modificado h4 my-3 text-white">Para mais informações confira meu currículo</h1>
+
+    <div class="efeito pb-3">
+      <a target="_blank" title="Currículo" href="https://drive.google.com/file/d/17NHOeCVq94iLHkV0xmZnkPmes1m4Yvb0/view?usp=sharing">
+        <p>ver</p>
+        <img src="img/curriculum.png" class="rounded img-fluid" alt="curriculum">
+      </a>
+    </div>
+  </div>
+
+  <hr>
+  <!-- FOOTER -->
+  <footer>
+    <div class="text-center text-white py-3">
+      <p>
+        <a class="text-decoration-none text-white" href="#topo"> Matheus Almeida © </a>
+        2020</p>
+    </div>
+  </footer>
+  <!-- *FINAL* FOOTER -->
+
+
+
+  <!--JANELAS MODAL -->
+
+  <!--JANELA DESENVOLVEDOR-->
+  <div class="modal fade" id="dev" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header background-black text-white">
+          <h4 class="modal-title pl-3">Desenvolvimento</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+        </div>
+
+        <div class="modal-body background-black text-white">
+          <!--tudo dentro docontainer-fluid-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-4">
+                <h4 class="title-modal">Frontend</h4>
+                <br>
+                <h5 class="title-modal">Languages</h5>
+                <p class="text-modal text-grey">
+                  HTML<br>
+                  CSS<br>
+                  Javascript</p>
+                <br>
+                <h5 class="title-modal">Framework</h5>
+                <p class="text-modal text-grey">Bootstrap</p>
+
+              </div>
+              <div class="col-4">
+                <h4 class="title-modal">Backend</h4>
+                <br>
+                <h5 class="title-modal">Languages</h5>
+                <p class="text-modal text-grey">Python<br>
+                </p>
+                <br>
+                <h5 class="title-modal">Framework</h5>
+                <p class="text-modal text-grey">Django</p>
+                <br>
+                <h5 class="title-modal">Database</h5>
+                <p class="text-modal text-grey">
+                  MySQL<br>
+                  SQlite3</p>
+
+              </div>
+              <div class="col-4">
+                <h4 class="title-modal">Desktop</h4>
+                <br>
+                <h5 class="title-modal">Languages</h5>
+                <p class="text-modal text-grey">Python</p>
+                <br>
+                <h5 class="title-modal">Framework</h5>
+                <p class="text-modal text-grey">PyQT5</p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer background-black">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-4">
+                <progress id="bar" value="30" max="100" class="w-100">Progress: 50%</progress>
+              </div>
+              <div class="col-4">
+                <progress id="bar" value="30" max="100" class="w-100">Progress: 50%</progress>
+              </div>
+              <div class="col-4">
+                <progress id="bar" value="30" max="100" class="w-100">Progress: 50%</progress>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--JANELA PENTEST-->
+  <!--tabindex sempre = -1 -->
+  <div class="modal fade" id="pentest" tabindex="-1" role="dialog">
+    <!--modal-lg é o tamanho da janela do modal-->
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header background-black text-white">
+          <h5 class="modal-title pl-3">Pentest</h5>
+          <!--data-dismiss="modal" ja entende que é um botão para fechar a janela-->
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body background-black text-white">
+          <!--tudo dentro docontainer-fluid-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+
+                <br>
+                <h5 class="title-modal">Languages</h5>
+                <p class="text-modal text-grey">
+                  Python<br>
+                  Shell Script<br>
+                  Javascript</p>
+                <br>
+                <h5 class="title-modal">Operacional System</h5>
+                <p class="text-modal text-grey">
+                  Linux<br>
+                  Windows
+                </p>
+                <br>
+                <h5 class="title-modal">Perfil Tryhackme</h5>
+                <a target="_blank" title="Tryhackme" href="https://tryhackme.com/p/almeidamatheus">
+                <img src="https://tryhackme-badges.s3.amazonaws.com/almeidamatheus.png" alt="TryHackMe">            
+                </a>
+                <br>
+                <br>
+                <details>
+                  <summary class="lead">?</summary>
+                  <section>
+                    <p class="text-grey">
+                      hello my friend</p>
+                  </section>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer background-black">
+          <progress id="bar" value="25" max="100" class="w-100">Progress: 30%</progress>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--JANELA REDES-->
+  <div class="modal fade" id="network" tabindex="-1" role="dialog">
+    <!--modal-lg é o tamanho da janela do modal-->
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header background-black text-white">
+          <h5 class="modal-title pl-3">Redes</h5>
+          <!--data-dismiss="modal" ja entende que é um botão para fechar a janela-->
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body background-black text-white">
+          <!--tudo dentro do container-fluid-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <h5 class="title-modal">Linux</h5>
+                <p class="text-modal text-grey">
+                  Server [samba]</br>
+                  Firewall [ufw, iptables]<br>
+                  Proxy [squid]<br>
+                  FTP [vsftpd]</br>
+                  DNS</br>
+                  SSH</br>
+                  HTTP [apache]</br>
+                  Redes</p>
+                <br>
+                <h5 class="title-modal">Tools</h5>
+                <p class="text-modal text-grey">
+                  Wireshark</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer background-black">
+          <progress id="bar" value="25" max="100" class="w-100">Progress: 30%</progress>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--JANELA OUTROS-->
+  <div class="modal fade" id="other" tabindex="-1" role="dialog">
+    <!--modal-lg é o tamanho da janela do modal-->
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header background-black text-white">
+          <h5 class="modal-title pl-3">Geral</h5>
+          <!--data-dismiss="modal" ja entende que é um botão para fechar a janela-->
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body background-black text-white">
+          <!--tudo dentro do container-fluid-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <h5 class="title-modal">Languages</h5>
+                <p class="text-modal text-grey">
+                  Inglês - Intermediário</p>
+                <br>
+                <h5 class="title-modal">Microsoft Office 365</h5>
+                <p class="text-modal text-grey">
+                  Excel</br>
+                  Word</br>
+                  Powerpoint</p>
+                <br>
+                <h5 class="title-modal">Microcontrollers</h5>
+                <p class="text-modal text-grey">
+                  Arduino</br>
+                  PIC</p>
+                <br>
+                <h5 class="title-modal">Desing PCB</h5>
+                <p class="text-modal text-grey">
+                  Autodesk EAGLE</p>
+                <br>  
+                <h5 class="title-modal">Hardware</h5>
+                <p class="text-modal text-grey">
+                  Montagem de computadores</br>
+                  Manutenção de computadores e notebooks</p>
+                <br>
+                <a target="_blank" title="Certificados" href="https://drive.google.com/drive/folders/12-ubfzUuv94dbs9dn5rApQipoXyfiaZE?usp=sharing">
+                  <h5 class="title-modal">Confira meus certificados clicando aqui</h5>
+                </a>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
