@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     function error() {
         status.classList.add("error");
-        status.innerHTML = "Erro, recarregue a pagina";
+        status.innerHTML = "Erro";
     }
 
     // handle the form submission event
