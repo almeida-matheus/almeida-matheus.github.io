@@ -107,6 +107,7 @@ hr {
     color: gray;
     background-color: gray;
 }
+
 /*esticar a tela principal quando tiver no lg*/
 @media screen and (min-width: 992px){
     #main{
@@ -125,6 +126,7 @@ hr {
 @media screen and (max-width: 576px){
     .title-modal {font-size:0.85rem;} /*1rem = 16px*/
     .text-modal {font-size:0.75rem;} /*1rem = 16px*/
+    #text-sobre-mim {text-align: justify;}
 }
 /*diminuir o titulo das skills quando tiver na tela media*/
 @media screen and (min-width: 576px) and (max-width: 992px){
