@@ -24,7 +24,6 @@ body{
     background-color: #212121;
     box-shadow: 0 10px 12px rgba(0,0,0,.3)
   }
-
 /*logo*/
 .navbar-brand{
     /*background-color: #63c6ae;*/
@@ -173,17 +172,16 @@ hr {
     visibility: visible;
     opacity: 1;
 }
-
 .efeito img{
     border: #191919 solid; /*esta linha aplica uma borda cor preta na imagem*/
     opacity: 1.0; /*esta linha é a que escurece a imagem*/
     transition: opacity .4s, visibility .4s;
  } 
-
 .efeito img:hover{
     border: #191919 solid; /*esta linha aplica uma borda cor preta na imagem*/
     opacity: 0.2; /*esta linha é a que clareia a imagem*/   
 }
+/*FINAL EFEITO AO PASSAR O MOUSE NA IMAGEM*/
 
 /*ANIMAÇÃO CONTATO*/
 #status {
