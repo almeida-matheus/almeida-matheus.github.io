@@ -10,23 +10,22 @@
     content="https://raw.githubusercontent.com/almeida-matheus/almeida-matheus.github.io/master/img/site.png">
   <meta name="keywords" content="matheus almeida costa,developer,programmer,python,hacking,offensive security">
   <meta name="description" content="matheus almeida website">
-  <!-- bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- CSS customizado-->
   <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-  <!-- icones font awesome-->
+  <!--font awesome-->
   <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+  <!--bootstrap CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <!-- bootstrap javascript-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+  <!--typed.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
   <!--javascript customizado-->
   <script src="js/main.js"></script>
   <!--logo-->
@@ -41,12 +40,12 @@
     <div class="container">
       <!--fixed-top: menu sempre fixo > tem que colocar um padding top no body pq tudo subiu-->
       <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#topo">matheus almeida</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <a class="navbar-brand" href="#topo">$ cd /home/matheus/ <span class="fa-blink">.</span></a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon">
             <!--pra aparecer o icone de menu precisa do navbar-light, tirei isso pq nao quero o texto branco, entao tem q incluir o span em baixo-->
-            <span class="sr-only">abrir ou fechar menu</span> <i class=" pt-1 text-white fas fa-bars"></i>
+            <span class="sr-only">abrir ou fechar menu</span>
           </span>
         </button>
 
@@ -109,24 +108,54 @@
   </section>
 
   <hr id="sobre-mim">
+  <div class="container">
+    <h1 class="text-section text-white text-center my-5">Sobre mim</h1>
 
-  <div class="jumbotron bg-black text-center pt-0 mt-0">
-    <div class="container">
-      <h1 class="display-4 text-white my-5">Sobre mim</h1>
-      <p id="text-sobre-mim" class="lead text-white">
-        Tenho formação como técnico em eletrônica e atualmente estou graduando em Segurança da Informação.<br>
-        Sou apaixonado por tecnologia e estou sempre estudando e aperfeiçoando meus conhecimentos na área de Tecnologia
-        da
-        Informação
-        (programação, redes de computadores, sistemas operacionais, hacking, computação em nuvem, hardwares).
-      </p>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-3 text-center text-md-right">
+        <img class="img-fluid" src="./img/profile_about.jpg" style="max-height: 400px; border-radius: 10px;">
+      </div>
+
+      <div class="col-md-8">
+
+        <div class="jumbotron bg-black text-center pt-0 mt-0">
+          <div class="container">
+            <!-- <h1 class="display-4 text-white my-5">Sobre mim</h1> -->
+            <p id="title-sobre-mim" class="text-white text-left font-weight-bolder pl-md-3 pb-3 pt-4 pt-md-0">Sou <span
+                class="typing"></span></p>
+            <p id="text-sobre-mim" class="text-white text-justify pl-md-3">
+              Tenho formação como técnico em eletrônica e atualmente estou graduando em Segurança da Informação.
+              Sou apaixonado por tecnologia e estou sempre estudando e aperfeiçoando meus conhecimentos na área de
+              Tecnologia da Informação
+              (programação, redes de computadores, sistemas operacionais, hacking, computação em nuvem, hardwares).
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
+
+  <!-- <hr>
+
+  <div class="container">
+    <div class="row d-flex justify-content-between">
+      
+      <div class="col-12 col-sm-3">
+        <div class="card shadow rounded">
+          <div class="card-body">
+            <p>teste</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> -->
 
   <hr id="habilidades">
 
   <div class="container mt-5">
-    <h1 class="display-4 text-center text-white text-wrap mb-5">Habilidades</h1>
+    <h1 class="text-section text-center text-white text-wrap mb-5">Habilidades</h1>
     <!--CARDS-->
     <div class="row justify-content-sm-center">
 
@@ -195,7 +224,7 @@
 
   <!--[CARDS]-->
   <div class="album pb-5 text-white">
-    <h1 class="display-4 text-center my-5">Projetos</h1>
+    <h1 class="text-section text-center my-5">Projetos</h1>
     <div class="container">
       <div class="row justify-content-sm-center">
 
@@ -273,7 +302,7 @@
 
   <!--[FORM]-->
   <div class="container mt-5">
-    <h1 class="display-4 text-center text-white">Contato</h1>
+    <h1 class="text-section text-center text-white">Contato</h1>
     <div class="row justify-content-center mb-1">
       <div class="col-12 col-md-9">
         <form action="https://formspree.io/f/mrgoegbl" method="POST" id="my-form">
@@ -343,7 +372,7 @@
       <div class="modal-content bg-black text-white">
 
         <div class="modal-header">
-          <h4 class="modal-title pl-3">Desenvolvimento WEB</h5>
+          <h4 class="modal-title pl-3">Desenvolvimento WEB</h4>
             <button type="button" class="close" data-dismiss="modal">
               <span>&times;</span>
             </button>
@@ -448,7 +477,7 @@
                 <br>
                 <br>
                 <details>
-                  <summary class="lead">?</summary>
+                  <summary class="h5">?</summary>
                   <section>
                     <p class="text-grey">
                       hello my friend</p>
@@ -579,6 +608,16 @@
     </div>
   </div>
   <!--// [MODAL]-->
+
+  <script>
+    // typing text animation script
+    var typed = new Typed(".typing", {
+      strings: ["Desenvolvedor Fullstack", "Analista de Infraestrutura","Técnico em Eletrônica", "Administrador de redes", "Freelancer"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+    });
+  </script>
 
 </body>
 

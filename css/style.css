@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -10,7 +12,7 @@ html {
 }
 
 body {
-    background-color: #212121;
+    background-color: #212121 !important;
     /*padding-top: 4rem;*/
 }
 
@@ -22,15 +24,20 @@ hr {
 }
 
 .bg-black {
-    background-color: #212121;
+    background-color: #212121 !important;
 }
 
 .text-grey {
     color: #C0C0C0;
 }
 
-/*NAVBAR*/
+@media screen and (min-width: 992px) {
+    #main {
+        height: 89vh;
+    }
+}
 
+/*NAVBAR*/
 .navbar {
     padding: 0;
 }
@@ -40,36 +47,28 @@ hr {
     background-color: #212121;
     box-shadow: 0 10px 12px rgba(0, 0, 0, .3)
 }
-
 /*logo*/
-
 .navbar-brand {
     /*background-color: #63c6ae;*/
-    color: white;
+    color: #e5e5e5;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 2px;
     padding-right: 2px;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    transition: all 0.3s;
 }
-
-/*transição ao passar o mouse*/
-
 .navbar-brand:hover {
-    background-color: whitesmoke;
-    color: #212121;
+    color: #b7b7b7;
 }
-
 /*todos links*/
-
 .navbar-nav {
     /*background-color: #242a2c;*/
     text-align: center;
 }
-
 /*links*/
-
 .nav-link {
     display: block;
     padding-top: 2rem;
@@ -81,16 +80,6 @@ hr {
     color: whitesmoke;
     font-weight: 600;
 }
-
-/*transição ao passar o mouse*/
-
-.nav-link:hover {
-    background-color: whitesmoke;
-    color: #212121;
-}
-
-/*alterar o menu/nav quando tiver no mínimo lg, atinge oq for maior q isso*/
-
 @media screen and (min-width: 992px) {
     .nav-link {
         padding-top: 1.35rem;
@@ -100,9 +89,51 @@ hr {
         /*opcional se quiser distanciar os links do menu*/
         /*se tivesse cor no background era só colocar background-color: transparent; em .navbar-nav*/
     }
+    /*transição ao passar o mouse*/
+    .nav-link:hover {
+        color:#00a000;
+    }
+    .nav-link::after {
+        margin: auto;
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: width .4s;
+        background-color: #00a000;
+    }
+    .nav-link:hover::after {
+        width: 100%;
+        transition: width .4s;
+    }
 }
+/*// NAVBAR*/
 
-/*FINAL NAVBAR*/
+/*LOGO EFFECT*/
+.navbar-brand span{
+    display: inline-block;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 12px;
+    height: 17px;
+    line-height: 15px;
+    font-size: 20px;
+}
+@keyframes fa-blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+.fa-blink {
+  -webkit-animation: fa-blink 1.0s linear infinite;
+  -moz-animation: fa-blink 1.0s linear infinite;
+  -ms-animation: fa-blink 1.0s linear infinite;
+  -o-animation: fa-blink 1.0s linear infinite;
+  animation: fa-blink 1.0s linear infinite;
+}
+/*// LOGO EFFECT*/
 
 .profile-photo {
     max-width: 180px;
@@ -114,7 +145,6 @@ hr {
 }
 
 /*ICON FONTAWESOME*/
-
 #main a {
     text-decoration: none;
     color: #fff;
@@ -131,6 +161,7 @@ hr {
     height: 50px;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px black;
+    transition: all .3s;
 }
 
 .fa-linkedin-in {
@@ -185,40 +216,50 @@ hr {
 .fab:hover, .fas:hover {
     background-color: #fff;
 }
-
 /*// ICON FONTAWESOME*/
 
-/*esticar a tela principal quando tiver no lg*/
-
-@media screen and (min-width: 992px) {
-    #main {
-        height: 89vh;
-    }
+/*SOBRE MIM*/
+.typing{
+    color: #00a000;
 }
+/*SOBRE MIM*/
+
+.text-section {
+    font-size: 3rem;
+}
+
+#title-sobre-mim {
+    font-size: 1.5rem;
+}
+#text-sobre-mim {
+    border-left: solid 1px;
+    font-size: 1.25em;
+}
+
 
 /*diminuir a fonte das letras em telas nao lg*/
 
 @media screen and (max-width: 992px) {
-    .lead {
+    .text-section {
+        font-size: 1.75rem;
+    }
+    .h4 {
         font-size: 1.0rem;
     }
-    /*1rem = 16px*/
-    .display-4 {
-        font-size: 2.0rem;
-    }
-    /*1rem = 16px*/
-    .h4 {
-        font-size: 1.25rem;
-    }
-    /*1rem = 16px*/
     .h5 {
         font-size: 1.0rem;
     }
-    /*1rem = 16px*/
+    #title-sobre-mim  {
+        font-size: 1rem;
+    }
+    #text-sobre-mim {
+        border-left: none;
+        font-size: 1rem;
+    }
+    
 }
 
 /*diminuir a fonte das letras do modal*/
-
 @media screen and (max-width: 576px) {
     .title-modal {
         font-size: 0.85rem;
@@ -234,15 +275,13 @@ hr {
 }
 
 /*diminuir o titulo das skills quando tiver na tela media*/
-
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .text-nowrap {
         font-size: 1.0rem;
     }
 }
 
-/*CONTATO*/
-
+/*CONTACT*/
 #name {
     color: whitesmoke;
     background-color: #212121;
@@ -257,16 +296,14 @@ hr {
     color: whitesmoke;
     background-color: #212121;
 }
+/*// CONTACT*/
 
-/*FINAL CONTATO*/
-
-/*HOVER IMG*/
+/*EFFECT HOVER IMG*/
 
 .efeito {
     position: relative;
     display: block;
 }
-
 .efeito p {
     position: absolute;
     left: 50%;
@@ -281,9 +318,7 @@ hr {
     opacity: 0;
     transition: opacity .2s, visibility .2s;
 }
-
 /*quando passar o mouse em cima da tag a*/
-
 .efeito a:hover p {
     visibility: visible;
     opacity: 1;
@@ -296,18 +331,15 @@ hr {
     /*esta linha é a que escurece a imagem*/
     transition: opacity .4s, visibility .4s;
 }
-
 .efeito img:hover {
     border: #191919 solid;
     /*esta linha aplica uma borda cor preta na imagem*/
     opacity: 0.2;
     /*esta linha é a que clareia a imagem*/
 }
+/*// HOVER IMG*/
 
-/*FINAL HOVER IMG*/
-
-/*ANIMAÇÃO CONTATO*/
-
+/*ANIMATION CONTACT*/
 #status {
     width: 90%;
     max-width: 500px;
@@ -342,5 +374,4 @@ hr {
         pointer-events: none;
     }
 }
-
-/* FINAL ANIMACAO CONTATO*/
+/*// ANIMATION CONTACT*/
