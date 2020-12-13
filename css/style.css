@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-
 html {
     scroll-behavior: smooth;
 }
@@ -38,6 +37,7 @@ hr {
 }
 
 /*NAVBAR*/
+
 .navbar {
     padding: 0;
 }
@@ -47,7 +47,9 @@ hr {
     background-color: #212121;
     box-shadow: 0 10px 12px rgba(0, 0, 0, .3)
 }
+
 /*logo*/
+
 .navbar-brand {
     /*background-color: #63c6ae;*/
     color: #e5e5e5;
@@ -60,10 +62,13 @@ hr {
     font-family: 'Source Code Pro', monospace;
     transition: all 0.3s;
 }
+
 .navbar-brand:hover {
     color: #b7b7b7;
 }
+
 /*todos links*/
+
 .navbar-nav {
     /*background-color: #242a2c;*/
     text-align: center;
@@ -71,8 +76,8 @@ hr {
 
 .nav-link {
     display: block;
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
     border-bottom: 1px dotted rgba(255, 255, 255, .3);
     text-transform: uppercase;
     font-size: .9rem;
@@ -92,7 +97,7 @@ hr {
     }
     /*transição ao passar o mouse*/
     .nav-link:hover {
-        color:#00a000;
+        color: #00a000;
     }
     .nav-link::after {
         margin: auto;
@@ -109,10 +114,12 @@ hr {
         transition: width .4s;
     }
 }
+
 /*// NAVBAR*/
 
 /*LOGO EFFECT*/
-.navbar-brand span{
+
+.navbar-brand span {
     display: inline-block;
     color: whitesmoke;
     background-color: whitesmoke;
@@ -122,18 +129,27 @@ hr {
     line-height: 15px;
     font-size: 20px;
 }
+
 @keyframes fa-blink {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 .fa-blink {
-  -webkit-animation: fa-blink 1.0s linear infinite;
-  -moz-animation: fa-blink 1.0s linear infinite;
-  -ms-animation: fa-blink 1.0s linear infinite;
-  -o-animation: fa-blink 1.0s linear infinite;
-  animation: fa-blink 1.0s linear infinite;
+    -webkit-animation: fa-blink 1.0s linear infinite;
+    -moz-animation: fa-blink 1.0s linear infinite;
+    -ms-animation: fa-blink 1.0s linear infinite;
+    -o-animation: fa-blink 1.0s linear infinite;
+    animation: fa-blink 1.0s linear infinite;
 }
+
 /*// LOGO EFFECT*/
 
 .profile-photo {
@@ -146,6 +162,7 @@ hr {
 }
 
 /*ICON FONTAWESOME*/
+
 #main a {
     text-decoration: none;
     color: #fff;
@@ -217,27 +234,38 @@ hr {
 #main .fab:hover, #main .fas:hover {
     background-color: #fff;
 }
+
 /*// ICON FONTAWESOME*/
-
-/*SOBRE MIM*/
-.typing{
-    color: #00a000;
-}
-/*SOBRE MIM*/
-
-
 
 .text-section {
     font-size: 3rem;
 }
 
+/*SOBRE MIM*/
+
+.typing {
+    color: #00a000;
+}
+
 #title-sobre-mim {
     font-size: 1.5rem;
 }
+
 #text-sobre-mim {
     border-left: solid 1px;
     font-size: 1.25em;
 }
+.about a{
+  text-decoration: none;
+  color: #00a000;  
+}
+.about a:hover{
+    text-decoration: none;
+    color: #006600;  
+}
+/*//SOBRE MIM*/
+
+/*SKILLS*/
 
 .skill .card {
     width: 18rem;
@@ -252,24 +280,93 @@ hr {
     color: #00a000;
     transition: all 0.3s ease;
 }
+
 .skill .title-skill {
     font-size: 25px;
     color: whitesmoke;
     padding-top: 10px;
 }
+
 .skill .text-skill {
     font-size: 16px;
     color: whitesmoke;
 }
 
-.skill .card:hover{
+.skill .card:hover {
     background-color: #006600;
     transform: scale(1.05);
 }
-.skill .card:hover .icon-skill{
+
+.skill .card:hover .icon-skill {
     color: whitesmoke;
 }
+/*// SKILLS*/
 
+/*SKILLS TEMP*/
+/*LG >*/
+@media screen and (min-width: 992px) {
+    #card-1{
+        margin-left: auto;
+    }
+    #card-2{
+        margin-right: auto;
+    }
+}
+/* LG <*/
+@media screen and (max-width: 992px) {
+    #card-1{
+        margin: auto;
+    }
+    #card-2{
+        margin: auto;
+    }
+}
+/*// SKILLS TEMP*/
+
+
+/*KNOW*/
+.title-know {
+    font-size: 1.5rem;
+    border-bottom: 1px solid whitesmoke;
+}
+.skills__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: 600;
+    padding: .75rem 1rem;
+    margin-bottom: 18px;
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+
+    background-color: #323232;
+    color: whitesmoke;
+}
+.skills_icon{
+    font-size: 2rem;
+    margin-right: 12px;
+    color: white;
+}
+.skills__names {
+    display: flex;
+    align-items: center;
+}
+.skills__bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #006600;
+    height: .25rem;
+    border-radius: .5rem;
+    /* z-index: var(--z-back); */
+    overflow: hidden;
+    margin-left: 2px;
+}
+.skills__html {
+    width: 98.5%;
+}
+/*// KNOW*/
 
 /*diminuir a fonte das letras em telas nao lg*/
 
@@ -277,23 +374,20 @@ hr {
     .text-section {
         font-size: 1.75rem;
     }
-    .h4 {
-        font-size: 1.0rem;
+    .text-default{
+        font-size: 1.25rem;
     }
-    .h5 {
-        font-size: 1.0rem;
-    }
-    #title-sobre-mim  {
+    #title-sobre-mim {
         font-size: 1rem;
     }
     #text-sobre-mim {
         border-left: none;
         font-size: 1rem;
     }
-    
 }
 
 /*diminuir a fonte das letras do modal*/
+
 @media screen and (max-width: 576px) {
     .title-modal {
         font-size: 0.85rem;
@@ -309,6 +403,7 @@ hr {
 }
 
 /*diminuir o titulo das skills quando tiver na tela media*/
+
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .text-nowrap {
         font-size: 1.0rem;
@@ -316,6 +411,7 @@ hr {
 }
 
 /*CONTACT*/
+
 #name {
     color: whitesmoke;
     background-color: #212121;
@@ -330,6 +426,7 @@ hr {
     color: whitesmoke;
     background-color: #212121;
 }
+
 /*// CONTACT*/
 
 /*EFFECT HOVER IMG*/
@@ -338,6 +435,7 @@ hr {
     position: relative;
     display: block;
 }
+
 .efeito p {
     position: absolute;
     left: 50%;
@@ -352,7 +450,9 @@ hr {
     opacity: 0;
     transition: opacity .2s, visibility .2s;
 }
+
 /*quando passar o mouse em cima da tag a*/
+
 .efeito a:hover p {
     visibility: visible;
     opacity: 1;
@@ -365,15 +465,18 @@ hr {
     /*esta linha é a que escurece a imagem*/
     transition: opacity .4s, visibility .4s;
 }
+
 .efeito img:hover {
     border: #191919 solid;
     /*esta linha aplica uma borda cor preta na imagem*/
     opacity: 0.2;
     /*esta linha é a que clareia a imagem*/
 }
+
 /*// HOVER IMG*/
 
 /*ANIMATION CONTACT*/
+
 #status {
     width: 90%;
     max-width: 500px;
@@ -408,4 +511,5 @@ hr {
         pointer-events: none;
     }
 }
+
 /*// ANIMATION CONTACT*/

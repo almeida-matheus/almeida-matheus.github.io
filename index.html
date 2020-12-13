@@ -58,9 +58,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#habilidades">habilidades</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#projetos">projetos</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#contato">contato</a>
             </li>
@@ -87,8 +87,8 @@
       <div class="container my-5 py-5">
         <img class="profile-photo img-fluid" src="./img/profile.jpeg" alt="Matheus Almeida Costa"
           title="Matheus Almeida Costa">
-        <h1 class="h2 text-white font-weight-bold">Matheus Almeida Costa</h1>
-        <p class="text-grey font-weight-bold py-2">Web Development - Cyber Security - Computer Network</p>
+        <h1 class="h2 text-white font-weight-bold pb-4">Matheus Almeida Costa</h1>
+        <!-- <p class="text-grey font-weight-bold py-2">Web Development - Cyber Security - Computer Network</p> -->
         <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/matheus-almeida-costa/"><i
             class="fab fa-linkedin-in"></i></a>
         <a target="_blank" title="GitHub" href="https://github.com/almeida-matheus"><i class="fab fa-github"></i></a>
@@ -109,7 +109,7 @@
   </section>
 
   <hr id="sobre-mim">
-  <div class="container">
+  <div class="container about">
     <h1 class="text-section text-white text-center my-5">Sobre mim</h1>
 
     <div class="row d-flex justify-content-center pb-5">
@@ -128,8 +128,9 @@
             <p id="text-sobre-mim" class="text-white text-justify pl-md-3">
               Tenho formação como técnico em eletrônica e atualmente estou graduando em Segurança da Informação.
               Sou apaixonado por tecnologia e estou sempre estudando e aperfeiçoando meus conhecimentos na área de
-              Tecnologia da Informação
-              (programação, redes de computadores, sistemas operacionais, hacking, computação em nuvem, hardwares).
+              Tecnologia da Informação. (programação, redes de computadores, sistemas operacionais, hacking, computação em nuvem, hardwares).
+              Atualmente meu foco de aprendizado é desenvolvimento web e servidores linux. Compartilho conhecimento no meu
+              <a href="https://almeidamatheus.netlify.app/" target="_blank">blog</a>
             </p>
           </div>
         </div>
@@ -142,10 +143,10 @@
 
   <div class="container skill">
     <h1 class="text-section text-center text-white text-wrap mt-5">Conhecimentos</h1>
-    <div class=" d-flex row justify-content-sm-start">
+    <div class=" d-flex row justify-content-start">
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card shadow text-center d-block mx-auto my-5">
+      <div class="col-12 col-md-6">
+        <div id="card-1" class="card shadow text-center d-block mr-lg-4 my-5">
           <div class="card-body">
             <i class="icon-skill far fa-window-restore pt-5"></i>
             <p class="title-skill">Front-end</p>
@@ -156,8 +157,8 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card shadow text-center d-block mx-auto my-5">
+      <div class="col-12 col-md-6 ">
+        <div id="card-2" class="card shadow text-center d-block ml-lg-4 my-5">
           <div class="card-body d-flex h-100 column align-items-center justify-content-center">
             <div class="align-items-center justify-content-center">
               <i class="icon-skill fas fa-terminal"></i>
@@ -210,6 +211,101 @@
       </div>
 
     </div>
+  </div>
+
+  <div class="container front">
+    <div class="d-flex row justify-content-center mb-0 mt-5">
+
+      <div class="col-12 col-sm-4">
+        <p class="title-know text-white">Front-end</p>
+        
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class="skills_icon fab fa-html5"></i>
+            <span class="skills__name">HTML</span>
+          </div>
+          <div class="skills__bar skills__html">
+          </div>
+          <div>
+            <span class="skills__percentage"></span>
+          </div>
+        </div>
+
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class="skills_icon fab fa-css3-alt"></i>
+            <span class="skills__name">CSS</span>
+          </div>
+          <div class="skills__bar skills__html">
+          </div>
+          <div>
+            <span class="skills__percentage"></span>
+          </div>
+        </div>
+
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class="skills_icon fab fa-js-square"></i>
+            <span class="skills__name">Javascript</span>
+          </div>
+          <div class="skills__bar skills__html">
+          </div>
+          <div>
+            <span class="skills__percentage"></span>
+          </div>
+        </div>
+
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class="skills_icon fab fa-bootstrap"></i>
+            <span class="skills__name">Bootstrap</span>
+          </div>
+          <div class="skills__bar skills__html">
+          </div>
+          <div>
+            <span class="skills__percentage"></span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-sm-4">
+        <p class="title-know text-white">Back-end</p>
+
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class="skills_icon fab fa-python"></i>
+            <span class="skills__name">Python</span>
+          </div>
+          <div class="skills__bar skills__html">
+          </div>
+          <div>
+            <span class="skills__percentage"></span>
+          </div>
+        </div>
+
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class="skills_icon fas fa-database"></i>
+            <span class="skills__name">SQL</span>
+          </div>
+          <div class="skills__bar skills__html">
+          </div>
+          <div>
+            <span class="skills__percentage"></span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="jumbotron bg-black text-center mt-0 mb-3">
+    <h4 class="text-default text-white pb-2">Confira meu projetos no GitHub</h4>
+    <a href="https://github.com/almeida-matheus" target="_blank">
+      <button type="button" class="btn btn-md btn-outline-light"><i class="fab fa-github pr-2"></i>GitHub</button>
+    </a>
   </div>
 
   <!-- <hr id="habilidades">
@@ -277,85 +373,6 @@
     </div>
   </div> -->
 
-
-  <hr id="projetos">
-
-  <!--[CARDS]-->
-  <div class="album pb-5 text-white">
-    <h1 class="text-section text-center my-5">Projetos</h1>
-    <div class="container">
-      <div class="row justify-content-sm-center">
-
-        <div class="col-sm-6 col-md-4 bg-black">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="img/blog.png" alt="projeto" style="height: 160px; width: 100%; display: block; border-bottom: 1px solid rgb(255, 255, 255);
-            " data-holder-rendered="true">
-            <div class="card-body bg-black">
-              <h2 class="card-title h5 text-center">Blog pessoal</h2>
-              <p class="card-text">Nesse blog compartilho conteúdos de tecnologia da informação</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="btn-group">
-                  <a href="https://almeidamatheus.netlify.app/" target="_blank"><button type="button"
-                      class="btn btn-sm btn-outline-light">Projeto</button></a>
-                  <a href="https://github.com/almeida-matheus/blog" target="_blank"><button type="button"
-                      class="btn btn-sm btn-outline-light">Código</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 bg-black">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="img/sites.png" alt="projeto"
-              style="height: 160px; width: 100%; display: block; border-bottom: 1px solid rgb(255, 255, 255);"
-              data-holder-rendered="true">
-            <div class="card-body bg-black">
-              <h2 class="card-title h5 text-center">Sites</h2>
-              <p class="card-text">Alguns sites que eu desenvolvi durante meus estudos de front-end</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="btn-group">
-                  <a href="https://almeida-matheus.github.io/front-end/" target="_blank"><button type="button"
-                      class="btn btn-sm btn-outline-light">Projeto</button></a>
-                  <a href="https://github.com/almeida-matheus/front-end" target="_blank"><button type="button"
-                      class="btn btn-sm btn-outline-light">Código</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col-sm-6 col-md-4 bg-black">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="img/gerenciador_contas.png" alt="projeto"
-              style="height: 160px; width: 100%; display: block; border-bottom: 1px solid rgb(255, 255, 255);
-              " data-holder-rendered="true">
-            <div class="card-body bg-black">
-              <h2 class="card-title h5 text-center">Gerenciador de contas</h2>
-              <p class="card-text">Um programa para guardar login e senhas de serviços</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="btn-group">
-                  <a href="https://github.com/almeida-matheus/gerenciador-de-contas" target="_blank"><button type="button"
-                      class="btn btn-sm btn-outline-light">Projeto</button></a>
-                  <a href="https://github.com/almeida-matheus/gerenciador-de-contas" target="_blank"><button type="button"
-                      class="btn btn-sm btn-outline-light">Código</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-      </div>
-      <div class="jumbotron bg-black text-center mt-3 pt-4 pb-0 mb-0">
-        <h1 class="h4 text-white pb-1">Confira mais projetos no meu GitHub</h1>
-        <a href="https://github.com/almeida-matheus" target="_blank">
-          <button type="button" class="btn btn-md btn-outline-light"><i class="fab fa-github pr-2"></i>GitHub</button>
-        </a>
-      </div>
-    </div>
-  </div>
-  <!--// [CARDS]-->
-
   <hr id="contato">
 
   <!--[FORM]-->
@@ -395,14 +412,14 @@
 
   <div class="jumbotron bg-black text-center mt-3 pt-4 pb-0">
     <div class="container">
-      <h1 class="h4 text-white ">Disponível para oportunidades</h1>
-      <h1 class="h5"><a class="text-success" href="mailto:almeidamatheus.m@gmail.com">almeidamatheus.m@gmail.com</a>
-      </h1>
+      <h4 class="text-default text-white ">Disponível para oportunidades</h4>
+      <h4 class="text-default"><a class="text-success" href="mailto:almeidamatheus.m@gmail.com">almeidamatheus.m@gmail.com</a>
+      </h4>
     </div>
   </div>
 
   <div class="text-center py-0">
-    <h1 class="h4 my-3 text-white">Para mais informações confira meu currículo</h1>
+    <h4 class="text-default text-white my-3">Para mais informações confira meu currículo</h4>
 
     <div class="efeito pb-3">
       <a target="_blank" title="Currículo" href="https://bit.ly/curriculum-matheus">
