@@ -68,11 +68,11 @@ hr {
     /*background-color: #242a2c;*/
     text-align: center;
 }
-/*links*/
+
 .nav-link {
     display: block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
     border-bottom: 1px dotted rgba(255, 255, 255, .3);
     text-transform: uppercase;
     font-size: .9rem;
@@ -80,6 +80,7 @@ hr {
     color: whitesmoke;
     font-weight: 600;
 }
+
 @media screen and (min-width: 992px) {
     .nav-link {
         padding-top: 1.35rem;
@@ -213,7 +214,7 @@ hr {
     color: #c4302b;
 }
 
-.fab:hover, .fas:hover {
+#main .fab:hover, #main .fas:hover {
     background-color: #fff;
 }
 /*// ICON FONTAWESOME*/
@@ -223,6 +224,8 @@ hr {
     color: #00a000;
 }
 /*SOBRE MIM*/
+
+
 
 .text-section {
     font-size: 3rem;
@@ -234,6 +237,37 @@ hr {
 #text-sobre-mim {
     border-left: solid 1px;
     font-size: 1.25em;
+}
+
+.skill .card {
+    width: 18rem;
+    height: 15rem;
+    border-radius: 20px;
+    background-color: #323232;
+    transition: all 0.3s ease;
+}
+
+.skill .icon-skill {
+    font-size: 50px;
+    color: #00a000;
+    transition: all 0.3s ease;
+}
+.skill .title-skill {
+    font-size: 25px;
+    color: whitesmoke;
+    padding-top: 10px;
+}
+.skill .text-skill {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.skill .card:hover{
+    background-color: #006600;
+    transform: scale(1.05);
+}
+.skill .card:hover .icon-skill{
+    color: whitesmoke;
 }
 
 

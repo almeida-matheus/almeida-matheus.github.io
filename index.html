@@ -41,11 +41,12 @@
       <!--fixed-top: menu sempre fixo > tem que colocar um padding top no body pq tudo subiu-->
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#topo">$ cd /home/matheus/ <span class="fa-blink">.</span></a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon">
             <!--pra aparecer o icone de menu precisa do navbar-light, tirei isso pq nao quero o texto branco, entao tem q incluir o span em baixo-->
             <span class="sr-only">abrir ou fechar menu</span>
+            <i class="text-white fas fa-bars pt-1"></i>
           </span>
         </button>
 
@@ -111,14 +112,15 @@
   <div class="container">
     <h1 class="text-section text-white text-center my-5">Sobre mim</h1>
 
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-3 text-center text-md-right">
+    <div class="row d-flex justify-content-center pb-5">
+
+      <div class="col-md-4 text-center text-md-right">
         <img class="img-fluid" src="./img/profile_about.jpg" style="max-height: 400px; border-radius: 10px;">
       </div>
 
       <div class="col-md-8">
 
-        <div class="jumbotron bg-black text-center pt-0 mt-0">
+        <div class="bg-black text-center">
           <div class="container">
             <!-- <h1 class="display-4 text-white my-5">Sobre mim</h1> -->
             <p id="title-sobre-mim" class="text-white text-left font-weight-bolder pl-md-3 pb-3 pt-4 pt-md-0">Sou <span
@@ -136,27 +138,84 @@
     </div>
   </div>
 
-  <!-- <hr>
+  <hr id="habilidades">
 
-  <div class="container">
-    <div class="row d-flex justify-content-between">
-      
-      <div class="col-12 col-sm-3">
-        <div class="card shadow rounded">
+  <div class="container skill">
+    <h1 class="text-section text-center text-white text-wrap mt-5">Conhecimentos</h1>
+    <div class=" d-flex row justify-content-sm-start">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow text-center d-block mx-auto my-5">
           <div class="card-body">
-            <p>teste</p>
+            <i class="icon-skill far fa-window-restore pt-5"></i>
+            <p class="title-skill">Front-end</p>
+            <p class="text-skill">
+              <!-- Interface gráfica de uma aplicação -->
+            </p>
           </div>
         </div>
       </div>
 
-    </div>
-  </div> -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow text-center d-block mx-auto my-5">
+          <div class="card-body d-flex h-100 column align-items-center justify-content-center">
+            <div class="align-items-center justify-content-center">
+              <i class="icon-skill fas fa-terminal"></i>
+              <p class="title-skill">Back-end</p>
+              <p class="text-skill">
+                <!-- Processamento de dados que ocorre no lado do servidor -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <hr id="habilidades">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow text-center d-block mx-auto my-5">
+          <div class="card-body">
+            <i class="icon-skill fas fa-network-wired pt-5"></i>
+            <p class="title-skill">Infraestrutura</p>
+            <p class="text-skill">
+              <!-- Redes, Servidores, Hardware -->
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow text-center d-block mx-auto my-5">
+          <div class="card-body">
+            <i class="icon-skill fas fa-lock pt-5"></i>
+            <p class="title-skill">Segurança</p>
+            <p class="text-skill">
+              <!-- Segurança da Informação -->
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow text-center d-block mx-auto my-5">
+          <div class="card-body">
+            <i class="icon-skill fas fa-microchip pt-5"></i>
+            <p class="title-skill">Eletrônica</p>
+            <p class="text-skill">
+              <!-- Microcontroladores e PCB -->
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- <hr id="habilidades">
 
   <div class="container mt-5">
     <h1 class="text-section text-center text-white text-wrap mb-5">Habilidades</h1>
-    <!--CARDS-->
     <div class="row justify-content-sm-center">
 
       <div class="col-sm-6 col-md-3 mb-5">
@@ -173,7 +232,7 @@
         </div>
       </div>
 
-      <!-- <div class="col-sm-6 col-md-3 mb-5">
+      <div class="col-sm-6 col-md-3 mb-5">
         <div class="card bg-black" style="border: none;">
           <div class="text-center">
             <img class="card-img-top" src="img/FAVPNG_pentest_white.png" style="height: 150px; width: 150px;">
@@ -185,7 +244,7 @@
             </a>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <div class="col-sm-6 col-md-3 mb-5">
         <div class="card bg-black" style="border: none;">
@@ -216,8 +275,7 @@
       </div>
 
     </div>
-    <!--// [CARDS]-->
-  </div>
+  </div> -->
 
 
   <hr id="projetos">
@@ -373,9 +431,9 @@
 
         <div class="modal-header">
           <h4 class="modal-title pl-3">Desenvolvimento WEB</h4>
-            <button type="button" class="close" data-dismiss="modal">
-              <span>&times;</span>
-            </button>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
         </div>
 
         <div class="modal-body">
@@ -612,7 +670,7 @@
   <script>
     // typing text animation script
     var typed = new Typed(".typing", {
-      strings: ["Desenvolvedor Fullstack", "Analista de Infraestrutura","Técnico em Eletrônica", "Administrador de redes", "Freelancer"],
+      strings: ["Desenvolvedor Fullstack", "Analista de Infraestrutura", "Técnico em Eletrônica", "Administrador de redes", "Freelancer"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true
