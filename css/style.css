@@ -159,6 +159,8 @@ hr {
     height: auto;
     border-radius: 50%;
     margin-bottom: 25px;
+    border: 6px solid #00a000;
+    box-shadow: 1px 1px 1px 1px black;
 }
 
 /*ICON FONTAWESOME*/
@@ -183,7 +185,8 @@ hr {
 }
 
 .fa-linkedin-in {
-    background-color: #3b5999;
+    /* background-color: #3b5999; */
+    background-color: #323232;
 }
 
 .fa-linkedin-in:hover {
@@ -191,16 +194,17 @@ hr {
 }
 
 #main .fa-github {
-    background-color: #333;
+    background-color: #323232;
 }
 
 #main .fa-github:hover {
-    color: #333;
+    color: #323232;
     background-color: #fff;
 }
 
 .fa-globe-americas {
-    background-color: #006600;
+    /* background-color: #006600; */
+    background-color: #323232;
 }
 
 .fa-globe-americas:hover {
@@ -208,7 +212,8 @@ hr {
 }
 
 .fa-telegram-plane {
-    background-color: #0088cc;
+    /* background-color: #0088cc; */
+    background-color: #323232;
 }
 
 .fa-telegram-plane:hover {
@@ -216,7 +221,8 @@ hr {
 }
 
 .fa-medium-m {
-    background-color: #80604d;
+    /* background-color: #80604d; */
+    background-color: #323232;
 }
 
 .fa-medium-m:hover {
@@ -224,7 +230,8 @@ hr {
 }
 
 .fa-youtube {
-    background-color: #c4302b;
+    /* background-color: #c4302b; */
+    background-color: #323232;
 }
 
 .fa-youtube:hover {
@@ -255,14 +262,17 @@ hr {
     border-left: solid 1px;
     font-size: 1.25em;
 }
-.about a{
-  text-decoration: none;
-  color: #00a000;  
-}
-.about a:hover{
+
+.about a {
     text-decoration: none;
-    color: #006600;  
+    color: #00a000;
 }
+
+.about a:hover {
+    text-decoration: none;
+    color: #006600;
+}
+
 /*//SOBRE MIM*/
 
 /*SKILLS*/
@@ -300,35 +310,42 @@ hr {
 .skill .card:hover .icon-skill {
     color: whitesmoke;
 }
+
 /*// SKILLS*/
 
 /*SKILLS TEMP*/
+
 /*LG >*/
+
 @media screen and (min-width: 992px) {
-    #card-1{
+    #card-1 {
         margin-left: auto;
     }
-    #card-2{
+    #card-2 {
         margin-right: auto;
     }
 }
+
 /* LG <*/
+
 @media screen and (max-width: 992px) {
-    #card-1{
+    #card-1 {
         margin: auto;
     }
-    #card-2{
+    #card-2 {
         margin: auto;
     }
 }
+
 /*// SKILLS TEMP*/
 
-
 /*KNOW*/
+
 .title-know {
     font-size: 1.5rem;
     border-bottom: 1px solid whitesmoke;
 }
+
 .skills__data {
     display: flex;
     justify-content: space-between;
@@ -339,19 +356,21 @@ hr {
     margin-bottom: 18px;
     border-radius: .5rem;
     box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
-
     background-color: #323232;
     color: whitesmoke;
 }
-.skills_icon{
+
+.skills_icon {
     font-size: 2rem;
     margin-right: 12px;
     color: white;
 }
+
 .skills__names {
     display: flex;
     align-items: center;
 }
+
 .skills__bar {
     position: absolute;
     left: 0;
@@ -363,10 +382,89 @@ hr {
     overflow: hidden;
     margin-left: 2px;
 }
+
 .skills__html {
     width: 98.5%;
 }
+
 /*// KNOW*/
+
+/* BUTTON GITHUB*/
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons .buttons-row {
+    display: block;
+    margin-left: 60px;
+}
+
+.buttons-row a {
+    text-decoration: none;
+}
+.buttons-row a:hover {
+    text-decoration: none;
+}
+
+.buttons .buttons-row button {
+    position: relative;
+    display: block;
+    height: 55px;
+    width: 150px;
+    margin: 0;
+    color: #222;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    transition: all 0s ease-out;
+}
+
+.buttons-row button:active {
+    top: 3px;
+}
+
+.buttons-row button.git, .buttons-row button.git span {
+    background: #b2b2b2;
+    border-left: 1px solid #999999;
+    box-shadow: 0px 5px 0px 0px #999999;
+}
+
+.buttons-row button.git:active {
+    box-shadow: 0px 2px 0px 0px #999999;
+}
+
+.buttons-row button span {
+    position: absolute;
+    height: 55px;
+    width: 60px;
+    top: 0;
+    left: -60px;
+    line-height: 55px;
+    font-size: 25px;
+    display: block;
+    font-weight: normal;
+    border-radius: 5px 0 0 5px;
+}
+
+.buttons-row button:active span {
+    top: -3px;
+}
+
+.buttons-row button.git span {
+    border-right: 2px solid #999999;
+}
+
+.buttons-row button.git:active span {
+    box-shadow: 0px 5px 0px 0px #999999, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* BUTTON GITHUB*/
 
 /*diminuir a fonte das letras em telas nao lg*/
 
@@ -374,7 +472,7 @@ hr {
     .text-section {
         font-size: 1.75rem;
     }
-    .text-default{
+    .text-default {
         font-size: 1.25rem;
     }
     #title-sobre-mim {
