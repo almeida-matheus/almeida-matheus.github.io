@@ -156,6 +156,8 @@ hr {
 
 /*// LOGO EFFECT*/
 
+/*MAIN SECTION*/
+
 .profile-photo {
     max-width: 180px;
     max-height: 180px;
@@ -166,6 +168,29 @@ hr {
     border: 6px solid #00a000;
     box-shadow: 1px 1px 1px 1px black;
 }
+
+.inner {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(0.8);
+}
+
+#main-name {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: whitesmoke;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+/*// MAIN SECTION*/
 
 /*ICON FONTAWESOME*/
 
@@ -408,6 +433,7 @@ hr {
 .buttons-row a {
     text-decoration: none;
 }
+
 .buttons-row a:hover {
     text-decoration: none;
 }
@@ -476,9 +502,9 @@ hr {
     .text-section {
         font-size: 2rem;
     }
-    .text-default {
+    /* .text-default {
         font-size: 1.25rem;
-    }
+    } */
     .text-default-small {
         font-size: 1rem;
     }
@@ -618,3 +644,41 @@ hr {
 }
 
 /*// ANIMATION CONTACT*/
+
+/*ANIMATION >><<*/
+.text-arrow {
+    display: inline-block;
+}
+.left-arrow {
+    left: 15%;
+    animation: simple1 1s linear infinite;
+    display: inline-block;
+}
+
+.right-arrow {
+    right: 15%;
+    animation: simple 1s linear infinite;
+    display: inline-block;
+}
+
+@keyframes simple {
+    50% {
+        transform: translateX(20px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+}
+
+@keyframes simple1 {
+    50% {
+        transform: translateX(-20px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+}

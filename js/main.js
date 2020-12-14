@@ -1,3 +1,43 @@
+/*===== TYPING ANIMATION =====*/
+var typed = new Typed(".typing", {
+    strings: ["Desenvolvedor Fullstack", "Analista de Infraestrutura", "Técnico em Eletrônica", "Administrador de redes", "Freelancer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+const r = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: false
+});
+/*scroll top*/
+r.reveal('.animation-scroll', { delay: 200 });
+/*scroll about*/
+r.reveal('.img-sobre-mim', { delay: 400 });
+r.reveal('.text-sobre-mim', { delay: 800 });
+// r.reveal('.test', { interval: 200 });
+
+/*===== CLICK NAME ANIMATION =====*/
+var foo = document.querySelector('#main-name');
+
+foo.addEventListener('click', function () {
+    foo.className = 'animate__animated animate__pulse';
+});
+
+foo.addEventListener('webkitAnimationEnd', removeClass);
+foo.addEventListener('mozAnimationEnd', removeClass);
+foo.addEventListener('MSAnimationEnd', removeClass);
+foo.addEventListener('oanimationend', removeClass);
+foo.addEventListener('animationend', removeClass);
+
+function removeClass() {
+    foo.className = '';
+}
+
+/*===== CLICK CONTACT ANIMATION =====*/
 window.addEventListener("DOMContentLoaded", function () {
     // get the form elements defined in your form HTML above
 
