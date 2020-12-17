@@ -1,6 +1,6 @@
 /*===== TYPING ANIMATION =====*/
 var typed = new Typed(".typing", {
-    strings: ["Desenvolvedor Fullstack", "Analista de Infraestrutura", "Técnico em Eletrônica", "Administrador de redes", "Freelancer"],
+    strings: ["Desenvolvedor Fullstack", "Analista de Infraestrutura", "Analista de Segurança da Informação", "Técnico em Eletrônica"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true

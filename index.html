@@ -15,7 +15,9 @@
   <!--bootstrap CSS-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <!--logo-->
+  <!--boxicons-->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!--favicon-->
   <link rel="icon" href="./img/logo_white.png ">
   <!--titulo-->
   <title>Matheus Almeida Costa Portfolio</title>
@@ -25,7 +27,6 @@
   <!--[NAVBAR]-->
   <div class="menu-geral" id="topo">
     <div class="container">
-      <!--fixed-top: menu sempre fixo > tem que colocar um padding top no body pq tudo subiu-->
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand pr-0 mr-0" href="#topo">cd /home/matheus/ <span class="fa-blink">.</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -43,7 +44,7 @@
               <a class="nav-link" href="#sobre-mim">sobre mim<span class="sr-only">(página atual)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#habilidades">conhecimentos</a>
+              <a class="nav-link" href="#habilidades">habilidades</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="#projetos">projetos</a>
@@ -121,10 +122,9 @@
               Sou apaixonado por tecnologia e estou sempre estudando e aperfeiçoando meus conhecimentos na área de
               Tecnologia da Informação. (programação, redes de computadores, sistemas operacionais, hacking, computação
               em nuvem, hardwares).
-              Atualmente meu foco de aprendizado é desenvolvimento web e servidores linux. Compartilho meus
-              conhecimentos no
-              meu
-              <a href="https://almeidamatheus.netlify.app/" target="_blank">blog</a>
+              Atualmente meu foco de aprendizado é desenvolvimento web e servidores linux.
+              <!-- Compartilho conhecimentos no meu
+              <a href="https://almeidamatheus.netlify.app/" target="_blank">blog</a> -->
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@
   <hr id="habilidades">
 
   <div class="container skill animation-scroll">
-    <h1 class="text-section text-center text-white text-wrap mt-5">Conhecimentos</h1>
+    <h1 class="text-section text-center text-white text-wrap mt-5">Habilidades</h1>
     <div class=" d-flex row justify-content-start">
 
       <div class="col-12 col-md-6">
@@ -207,159 +207,189 @@
     </div>
   </div>
 
-  <div class="container animation-scroll">
-    <div class="d-flex row justify-content-center mb-0 mt-5">
+  <section class="animation-scroll">
+    <div class="container">
+      <div class="d-flex row justify-content-center mb-0 mt-5">
 
-      <div class="col-12 col-sm-4">
-        <p class="title-know text-white">Front-end</p>
+        <div class="col-12 col-sm-4">
+          <p class="title-know text-white">Front-end</p>
 
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class="skills_icon fab fa-html5"></i>
-            <span class="skills__name">HTML</span>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills_icon fab fa-html5"></i>
+              <span class="skills__name">HTML</span>
+            </div>
+            <div class="skills__bar skills__html">
+            </div>
+            <div>
+              <span class="skills__percentage"></span>
+            </div>
           </div>
-          <div class="skills__bar skills__html">
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills_icon fab fa-css3-alt"></i>
+              <span class="skills__name">CSS</span>
+            </div>
+            <div class="skills__bar skills__html">
+            </div>
+            <div>
+              <span class="skills__percentage"></span>
+            </div>
           </div>
-          <div>
-            <span class="skills__percentage"></span>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills_icon fab fa-js-square"></i>
+              <span class="skills__name">Javascript</span>
+            </div>
+            <div class="skills__bar skills__html">
+            </div>
+            <div>
+              <span class="skills__percentage"></span>
+            </div>
           </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <!-- <i class="skills_icon bx bxl-jquery"></i> -->
+              <i class='skills_icon bx bxl-jquery'></i>
+              <span class="skills__name">Jquery</span>
+            </div>
+            <div class="skills__bar skills__html">
+            </div>
+            <div>
+              <span class="skills__percentage"></span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills_icon fab fa-bootstrap"></i>
+              <span class="skills__name">Bootstrap</span>
+            </div>
+            <div class="skills__bar skills__html">
+            </div>
+            <div>
+              <span class="skills__percentage"></span>
+            </div>
+          </div>
+
         </div>
 
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class="skills_icon fab fa-css3-alt"></i>
-            <span class="skills__name">CSS</span>
-          </div>
-          <div class="skills__bar skills__html">
-          </div>
-          <div>
-            <span class="skills__percentage"></span>
-          </div>
-        </div>
+        <div class="col-12 col-sm-4">
+          <p class="title-know text-white">Back-end</p>
 
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class="skills_icon fab fa-js-square"></i>
-            <span class="skills__name">Javascript</span>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills_icon fab fa-python"></i>
+              <span class="skills__name">Python</span>
+            </div>
+            <div class="skills__bar skills__html">
+            </div>
+            <div>
+              <span class="skills__percentage"></span>
+            </div>
           </div>
-          <div class="skills__bar skills__html">
-          </div>
-          <div>
-            <span class="skills__percentage"></span>
-          </div>
-        </div>
 
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class="skills_icon fab fa-bootstrap"></i>
-            <span class="skills__name">Bootstrap</span>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='skills_icon bx bxl-django'></i>
+              <span class="skills__name">Django</span>
+            </div>
+            <div class="skills__bar skills__html">
+            </div>
+            <div>
+              <span class="skills__percentage"></span>
+            </div>
           </div>
-          <div class="skills__bar skills__html">
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills_icon fas fa-database"></i>
+              <span class="skills__name">SQL</span>
+            </div>
+            <div class="skills__bar skills__html">
+            </div>
+            <div>
+              <span class="skills__percentage"></span>
+            </div>
           </div>
-          <div>
-            <span class="skills__percentage"></span>
-          </div>
+
         </div>
 
       </div>
-
-      <div class="col-12 col-sm-4">
-        <p class="title-know text-white">Back-end</p>
-
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class="skills_icon fab fa-python"></i>
-            <span class="skills__name">Python</span>
-          </div>
-          <div class="skills__bar skills__html">
-          </div>
-          <div>
-            <span class="skills__percentage"></span>
-          </div>
-        </div>
-
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class="skills_icon fas fa-database"></i>
-            <span class="skills__name">SQL</span>
-          </div>
-          <div class="skills__bar skills__html">
-          </div>
-          <div>
-            <span class="skills__percentage"></span>
-          </div>
-        </div>
-
-      </div>
-
     </div>
-  </div>
 
-  <div class="jumbotron bg-black text-center mt-0 mb-3 animation-scroll">
-    <h4 class="text-default-small text-white pb-2">Confira meus projetos no GitHub</h4>
-    <div class="buttons">
-      <div class="buttons-row">
-        <a href="https://github.com/almeida-matheus" target="_blank">
-          <button class="git">
-            <span>
-              <i class="fab fa-github"></i>
-            </span>
-            GitHub
-          </button>
-        </a>
+    <div class="jumbotron bg-black text-center mt-0 mb-3">
+      <h4 class="text-default-small text-white pb-2">Confira meus projetos no GitHub</h4>
+      <div class="buttons">
+        <div class="buttons-row">
+          <a href="https://github.com/almeida-matheus" target="_blank">
+            <button class="git">
+              <span>
+                <i class="fab fa-github"></i>
+              </span>
+              GitHub
+            </button>
+          </a>
+        </div>
       </div>
-    </div>
-    <!-- <a href="https://github.com/almeida-matheus" target="_blank">
+      <!-- <a href="https://github.com/almeida-matheus" target="_blank">
       <button type="button" class="btn btn-md btn-outline-light"><i class="fab fa-github pr-2"></i>GitHub</button>
     </a> -->
-  </div>
+    </div>
+  </section>
 
   <hr id="contato">
 
   <!--[FORM]-->
-  <div class="container mt-5 animation-scroll">
-    <h1 class="text-section text-center text-white">Contato</h1>
-    <div class="row justify-content-center mb-1">
-      <div class="col-12 col-md-9">
-        <form action="https://formspree.io/f/mrgoegbl" method="POST" id="my-form">
-          <div class="form-row">
-
-            <div class="form-group col-12 col-sm-6 mt-3">
-              <label for="name" class="text-white">Nome</label>
-              <input type="text" id="name" name="name" class="form-control" placeholder="Nome">
-            </div>
-
-            <div class="form-group col-12 col-sm-6 mt-3">
-              <label for="email" class="text-white">E-mail</label>
-              <input type="email" id="email" name="email" class="form-control" placeholder="E-mail">
-            </div>
-
-            <div class="form-group col-12 mt-3">
-              <label for="message" class="text-white">Mensagem</label>
-              <textarea name="message" id="message" class="form-control" rows="6" placeholder="..."></textarea>
-            </div>
-
-            <div class="col-12 text-center">
-              <button type="submit" class="btn btn-lg btn-outline-light mt-1 text-center">Enviar mensagem</button>
-            </div>
-
-          </div>
-        </form>
-      </div>
-    </div>
-    <div id="status"></div>
-  </div>
-  <!--// [FORMS]-->
-
   <section class="animation-scroll">
+    <div class="container mt-5">
+      <h1 class="text-section text-center text-white">Contato</h1>
+      <div class="row justify-content-center mb-1">
+        <div class="col-12 col-md-9">
+          <form action="https://formspree.io/f/mrgoegbl" method="POST" id="my-form">
+            <div class="form-row">
+
+              <div class="form-group col-12 col-sm-6 mt-3">
+                <label for="name" class="text-white">Nome</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Nome">
+              </div>
+
+              <div class="form-group col-12 col-sm-6 mt-3">
+                <label for="email" class="text-white">E-mail</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="E-mail">
+              </div>
+
+              <div class="form-group col-12 mt-3">
+                <label for="message" class="text-white">Mensagem</label>
+                <textarea name="message" id="message" class="form-control" rows="6" placeholder="..."></textarea>
+              </div>
+
+              <div class="col-12 text-center">
+                <!-- <button type="submit" class="btn btn-lg btn-outline-light mt-1 text-center">Enviar mensagem</button> -->
+                <button type="submit" class="btn-contact">Enviar mensagem</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="status"></div>
+    </div>
+    <!--// [FORMS]-->
+
     <div class="jumbotron bg-black text-center mt-3 pt-4 pb-2 email">
       <div class="">
-        <span class="left-arrow text-white"> <<< </span>
-        <h4 class="text-arrow text-default-small text-white pb-2">Disponível para oportunidades</h4>
-        <span class="right-arrow text-white"> >>> </span><!---->
-        <h4 class="text-default-small"><a class="text-success"
-            href="mailto:almeidamatheus.m@gmail.com">almeidamatheus.m@gmail.com</a>
-        </h4>
+        <span class="left-arrow text-white">
+          <<< </span>
+            <h4 class="text-arrow text-default-small text-white pb-2">Disponível para oportunidades</h4>
+            <span class="right-arrow text-white"> >>> </span>
+            <!---->
+            <h4 class="text-default-small"><a class="text-success"
+                href="mailto:almeidamatheus.m@gmail.com">almeidamatheus.m@gmail.com</a>
+            </h4>
       </div>
     </div>
 
