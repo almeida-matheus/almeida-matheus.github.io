@@ -292,6 +292,11 @@ hr {
     font-size: 1.25em;
 }
 
+.about img {
+    max-height: 400px;
+    border-radius: 10px;
+}
+
 .about a {
     text-decoration: none;
     color: #00a000;
@@ -492,6 +497,18 @@ hr {
 .buttons-row button.git:active span {
     box-shadow: 0px 5px 0px 0px #999999, 6px 4px 2px rgba(0, 0, 0, 0.3);
 }
+@media screen and (max-width: 992px) {
+
+    .buttons-row button span {
+        font-size: 20px;
+    }
+    .buttons .buttons-row button {
+        font-size: 15px;
+        width: 100px;
+    }
+}
+
+
 
 /* BUTTON GITHUB*/
 
@@ -571,6 +588,11 @@ hr {
 .btn-contact:focus{
     border: none;
     outline: none !important;
+}
+@media screen and (max-width: 992px) {
+    .btn-contact {
+        font-size: 15px;
+    }
 }
 /*// BTN CONTACT*/
 
