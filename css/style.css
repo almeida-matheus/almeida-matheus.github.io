@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -27,26 +28,30 @@ hr {
     /*bg color*/
     --bg-first: #212121;
     --bg-second: #323232;
-    --bg-third: #00a000; /*#006600*/
+    --bg-third: #00a000;
     --bg-fourth: #cccccc; /*oposto do first*/
+    --bg-fifth: #006600; /*third dark*/
     /*text color*/
     --text-first: #e5e5e5;
     --text-second: #b7b7b7;
     --text-third: #00a000;
     --text-fourth: #212121; /*oposto do first*/ /*?*/
+    --text-fifth: #006600; /*third dark*/
 }
 
 .light-mode:root {
     /*bg color*/
     --bg-first: #e5e5e5;
     --bg-second: #b7b7b7;
-    --bg-third: #03d303;
+    --bg-third: #0000ff; 
     --bg-fourth: #212121;
+    --bg-fifth: #0000cc;
     /*text color*/
     --text-first: #212121;
     --text-second: #b7b7b7;
-    --text-third: #00a000;
+    --text-third: #0000ff;
     --text-fourth: #e5e5e5;
+    --text-fifth: #0000cc;
 }
 
 .bg-first {
@@ -55,24 +60,26 @@ hr {
 .bg-second {
     background-color: var(--bg-second);
 }
-
+.big-third{
+    background-color: var(--bg-third);
+}
 .bg-fourth {
     background-color: var(--bg-fourth);
 }
-
 .text-first {
     color: var(--text-first);
 }
-
 .text-second {
     color: var(--text-second);
 }
-
 .text-third {
     color: var(--text-third);
 }
+.text-fourth{
+    color: var(--text-fourth);
+}
 
-
+/*===== font size =====*/
 .big-font-size {
     font-size: 3rem;
 }
@@ -89,10 +96,14 @@ hr {
     .normal-font-size{
         font-size: 1rem;
     }
-    #text-about {
+    .about p{
+        border-left: none !important;
+        font-size: 1rem !important;
+    }
+    /* #text-about {
         border-left: none;
         font-size: 1rem;
-    }
+    } */
     .title-skill {
         font-size: 1.25rem !important;
     }
@@ -199,27 +210,27 @@ hr {
     }
 }
 
-#switch {
-    opacity: 0;
-    position: absolute;
-}
-.fa-adjust{
-    font-size: 25px;
-    line-height: 17px !important;
-    cursor: pointer;
-}
-
 #blog {
     background-color: var(--bg-third) !important;
     box-shadow: 1px 1px 1px 1px black;
+    color: whitesmoke !important;
 }
-
 #blog:hover {
     color: var(--text-second);
 }
 
-/*logo effect*/
+#switch {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+.fa-adjust{
+    font-size: 25px;
+    line-height: 20px !important;
+    cursor: pointer;
+}
 
+/*logo effect*/
 .navbar-brand span {
     display: inline-block;
     color: var(--text-first);
@@ -250,13 +261,10 @@ hr {
     -o-animation: fa-blink 1.0s linear infinite;
     animation: fa-blink 1.0s linear infinite;
 }
-
 /*// logo effect*/
-
 /*// NAVBAR*/
 
 /*MAIN SECTION*/
-
 .profile-photo {
     max-width: 180px;
     max-height: 180px;
@@ -332,19 +340,20 @@ hr {
     background-color: #fff;
 }
 /*// icon fontawesome*/
-
 /*// MAIN SECTION*/
 
-/*SOBRE MIM*/
-
+/*ABOUT ME*/
 .typing {
     color: var(--text-third);
 }
-
-#text-about {
+.about p{
     border-left: solid 1px;
     font-size: 1.25rem;
 }
+/* #text-about {
+    border-left: solid 1px;
+    font-size: 1.25rem;
+} */
 
 .about img {
     max-height: 400px;
@@ -358,13 +367,11 @@ hr {
 
 .about a:hover {
     text-decoration: none;
-    color: #006600;
+    color: var(--text-fifth);
 }
-
-/*//SOBRE MIM*/
+/*//ABOUT ME*/
 
 /*SKILLS*/
-
 .skill .card {
     width: 18rem;
     height: 15rem;
@@ -392,7 +399,7 @@ hr {
 } */
 
 .skill .card:hover {
-    background-color: #006600;
+    background-color: var(--text-fifth);
     transform: scale(1.05);
 }
 
@@ -425,9 +432,7 @@ hr {
         margin: auto;
     }
 }
-
 /*// skills temp*/
-
 /*// SKILLS*/
 
 
@@ -468,7 +473,7 @@ hr {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: #006600;
+    background-color: var(--bg-fifth);
     height: .25rem;
     border-radius: .5rem;
     /* z-index: var(--z-back); */
@@ -479,11 +484,9 @@ hr {
 .skills__html {
     width: 98.5%;
 }
-
 /*// KNOW*/
 
 /* BUTTON GITHUB*/
-
 .buttons {
     display: flex;
     justify-content: center;
@@ -580,7 +583,6 @@ hr {
 /*// CONTACT*/
 
 /*BTN CONTACT*/
-
 .btn-contact {
     border-radius: 5px;
     padding: 15px 25px;
@@ -617,43 +619,38 @@ hr {
     }
 }
 /*// BTN CONTACT*/
+
 #email-contact{
     color: var(--text-third);
 }
 #email-contact:hover {
     text-decoration: none !important;
-    color: #006600;
+    color: var(--text-fifth);
 }
 
 /*EFFECT HOVER IMG*/
-
 .efeito {
     position: relative;
     display: block;
 }
-
 .efeito p {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--text-third);
     border-radius: .35rem;
-    border: 4px solid rgba(255, 255, 255, .9);
-    padding: 5px 10px 5px 10px;
+    border: 4px solid var(--text-third);
+    padding: 2px 12px 2px 12px;
     opacity: 1.0;
     visibility: hidden;
     opacity: 0;
     transition: opacity .2s, visibility .2s;
 }
-
-/*quando passar o mouse em cima da tag a*/
-
 .efeito a:hover p {
     visibility: visible;
     opacity: 1;
 }
-
 .efeito img {
     border: #191919 solid;
     /*esta linha aplica uma borda cor preta na imagem*/
@@ -661,18 +658,15 @@ hr {
     /*esta linha é a que escurece a imagem*/
     transition: opacity .4s, visibility .4s;
 }
-
 .efeito img:hover {
     border: #191919 solid;
     /*esta linha aplica uma borda cor preta na imagem*/
     opacity: 0.2;
     /*esta linha é a que clareia a imagem*/
 }
-
 /*// HOVER IMG*/
 
 /*ANIMATION CONTACT*/
-
 #status {
     width: 90%;
     max-width: 500px;
@@ -709,7 +703,6 @@ hr {
         pointer-events: none;
     }
 }
-
 /*// ANIMATION CONTACT*/
 
 /*ANIMATION >><<*/
@@ -753,3 +746,4 @@ hr {
         opacity: 0;
     }
 }
+/*// ANIMATION >><<*/
