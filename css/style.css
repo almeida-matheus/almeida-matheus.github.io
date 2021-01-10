@@ -27,56 +27,85 @@ hr {
     /*bg color*/
     --bg-first: #212121;
     --bg-second: #323232;
-    --bg-third: #006600;
-    --bg-fourth: #cccccc;
+    --bg-third: #00a000; /*#006600*/
+    --bg-fourth: #cccccc; /*oposto do first*/
     /*text color*/
     --text-first: #e5e5e5;
-    --text-second: #00a000;
-    --text-third: #212121;
+    --text-second: #b7b7b7;
+    --text-third: #00a000;
+    --text-fourth: #212121; /*oposto do first*/ /*?*/
 }
+
 .light-mode:root {
     /*bg color*/
     --bg-first: #e5e5e5;
-    --bg-second: #323232;
-    --bg-third: #006600;
-    --bg-fourth: #323232;
+    --bg-second: #b7b7b7;
+    --bg-third: #03d303;
+    --bg-fourth: #212121;
     /*text color*/
     --text-first: #212121;
-    --text-second: #00a000;
-    --text-third: #e5e5e5;
+    --text-second: #b7b7b7;
+    --text-third: #00a000;
+    --text-fourth: #e5e5e5;
 }
 
 .bg-first {
     background-color: var(--bg-first);
 }
+.bg-second {
+    background-color: var(--bg-second);
+}
+
 .bg-fourth {
     background-color: var(--bg-fourth);
 }
+
 .text-first {
     color: var(--text-first);
 }
-.text-third{
+
+.text-second {
+    color: var(--text-second);
+}
+
+.text-third {
     color: var(--text-third);
 }
+
+
+.big-font-size {
+    font-size: 3rem;
+}
+
+.normal-font-size{
+    font-size: 1.5rem;
+}
+
+/*< LG*/
+@media screen and (max-width: 992px) {
+    .big-font-size {
+        font-size: 2rem;
+    }
+    .normal-font-size{
+        font-size: 1rem;
+    }
+    #text-about {
+        border-left: none;
+        font-size: 1rem;
+    }
+    .title-skill {
+        font-size: 1.25rem !important;
+    }
+    .left-arrow, .right-arrow {
+        font-size: 1rem !important;
+    }
+}
+
 
 @media screen and (min-width: 992px) {
     #main {
         height: 89vh;
     }
-}
-
-#switch {
-    opacity: 0;
-    position: absolute;
-}
-
-#blog {
-    background-color: #009900 !important;
-    box-shadow: 1px 1px 1px 1px black;
-}
-
-#blog:hover {
-    color: #b7b7b7;
 }
 
 /*NAVBAR*/
@@ -87,7 +116,7 @@ hr {
 
 .menu-geral {
     margin: 0 auto;
-    background-color: #212121;
+    background-color: (var(--bg-first));
     box-shadow: 0 10px 12px rgba(0, 0, 0, .3)
 }
 
@@ -95,7 +124,7 @@ hr {
 
 .navbar-brand {
     /*background-color: #63c6ae;*/
-    color: #e5e5e5;
+    color: var(--text-first);
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 2px;
@@ -108,7 +137,7 @@ hr {
 }
 
 .navbar-brand:hover {
-    color: #b7b7b7;
+    color: var(--text-second);
 }
 
 /*todos links*/
@@ -126,7 +155,7 @@ hr {
     text-transform: uppercase;
     font-size: .9rem;
     transition: all .5s ease;
-    color: whitesmoke;
+    color: var(--text-first);
     font-weight: 600;
 }
 
@@ -145,7 +174,7 @@ hr {
     }
     /*transição ao passar o mouse*/
     .nav-effect:hover {
-        color: #00a000;
+        color: var(--text-third);
     }
     .nav-effect::after {
         margin: auto;
@@ -155,7 +184,8 @@ hr {
         height: 2px;
         background: #fff;
         transition: width .4s;
-        background-color: #00a000;
+        /* background-color: #00a000; */
+        background-color: var(--bg-third);
     }
     .nav-effect:hover::after {
         width: 100%;
@@ -169,14 +199,31 @@ hr {
     }
 }
 
-/*// NAVBAR*/
+#switch {
+    opacity: 0;
+    position: absolute;
+}
+.fa-adjust{
+    font-size: 25px;
+    line-height: 17px !important;
+    cursor: pointer;
+}
 
-/*LOGO EFFECT*/
+#blog {
+    background-color: var(--bg-third) !important;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+#blog:hover {
+    color: var(--text-second);
+}
+
+/*logo effect*/
 
 .navbar-brand span {
     display: inline-block;
-    color: whitesmoke;
-    background-color: whitesmoke;
+    color: var(--text-first);
+    background-color: var(--bg-fourth);
     text-align: center;
     width: 12px;
     height: 17px;
@@ -204,7 +251,9 @@ hr {
     animation: fa-blink 1.0s linear infinite;
 }
 
-/*// LOGO EFFECT*/
+/*// logo effect*/
+
+/*// NAVBAR*/
 
 /*MAIN SECTION*/
 
@@ -240,19 +289,16 @@ hr {
     color: var(--text-first);
 }
 
-/*// MAIN SECTION*/
-
-/*ICON FONTAWESOME*/
+/*icon fontawesome*/
 
 #main a {
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
 }
 
 #main .fab, #main .fas {
     text-align: center;
-    margin: 5px;
-    /**/
+    margin: 5px; /**/
     line-height: 50px;
     font-size: 20px;
     font-weight: bold;
@@ -261,76 +307,43 @@ hr {
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px black;
     transition: all .3s;
-}
-
-.fa-linkedin-in {
-    /* background-color: #3b5999; */
-    background-color: #323232;
+    background-color: var(--bg-second);
+    color: var(--text-first);
 }
 
 .fa-linkedin-in:hover {
-    color: #3b5999;
+    color: #3b5999 !important;
 }
 
-#main .fa-github {
-    background-color: #323232;
-}
 
 #main .fa-github:hover {
-    color: #323232;
-    background-color: #fff;
-}
-
-.fa-telegram-plane {
-    /* background-color: #0088cc; */
-    background-color: #323232;
+    color: #323232 !important;
 }
 
 .fa-telegram-plane:hover {
-    color: #0088cc;
-}
-
-.fa-medium-m {
-    /* background-color: #80604d; */
-    background-color: #323232;
-}
-
-.fa-medium-m:hover {
-    color: #80604d;
-}
-
-.fa-youtube {
-    /* background-color: #c4302b; */
-    background-color: #323232;
+    color: #0088cc !important;
 }
 
 .fa-youtube:hover {
-    color: #c4302b;
+    color: #c4302b !important;
 }
 
 #main .fab:hover, #main .fas:hover {
     background-color: #fff;
 }
+/*// icon fontawesome*/
 
-/*// ICON FONTAWESOME*/
-
-.text-section {
-    font-size: 3rem;
-}
+/*// MAIN SECTION*/
 
 /*SOBRE MIM*/
 
 .typing {
-    color: #00a000;
+    color: var(--text-third);
 }
 
-#title-sobre-mim {
-    font-size: 1.5rem;
-}
-
-#text-sobre-mim {
+#text-about {
     border-left: solid 1px;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 .about img {
@@ -340,7 +353,7 @@ hr {
 
 .about a {
     text-decoration: none;
-    color: #00b000;
+    color: var(--text-third);
 }
 
 .about a:hover {
@@ -356,26 +369,27 @@ hr {
     width: 18rem;
     height: 15rem;
     border-radius: 20px;
-    background-color: #323232;
+    background-color: var(--bg-second);
+
     transition: all 0.3s ease;
 }
 
 .skill .icon-skill {
     font-size: 50px;
-    color: #009900;
+    color: var(--text-third);
     transition: all 0.3s ease;
 }
 
 .skill .title-skill {
-    font-size: 25px;
-    color: whitesmoke;
+    font-size: 1.5rem;
+    color: var(--text-first);
     padding-top: 10px;
 }
 
-.skill .text-skill {
+/* .skill .text-skill {
     font-size: 16px;
     color: whitesmoke;
-}
+} */
 
 .skill .card:hover {
     background-color: #006600;
@@ -386,12 +400,13 @@ hr {
     color: whitesmoke;
 }
 
-/*// SKILLS*/
+.skill .card:hover .title-skill {
+    color: whitesmoke !important;
+}
 
-/*SKILLS TEMP*/
+/*skills temp*/
 
 /*LG >*/
-
 @media screen and (min-width: 992px) {
     #card-1 {
         margin-left: auto;
@@ -402,7 +417,6 @@ hr {
 }
 
 /* LG <*/
-
 @media screen and (max-width: 992px) {
     #card-1 {
         margin: auto;
@@ -412,13 +426,16 @@ hr {
     }
 }
 
-/*// SKILLS TEMP*/
+/*// skills temp*/
+
+/*// SKILLS*/
+
+
 
 /*KNOW*/
-
 .title-know {
     font-size: 1.5rem;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid var(--text-first);
 }
 
 .skills__data {
@@ -431,19 +448,20 @@ hr {
     margin-bottom: 18px;
     border-radius: .5rem;
     box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
-    background-color: #323232;
+    background-color: var(--bg-second);
     color: whitesmoke;
 }
 
 .skills_icon {
     font-size: 2rem;
     margin-right: 12px;
-    color: white;
+    color: var(--text-first);
 }
 
 .skills__names {
     display: flex;
     align-items: center;
+    color: var(--text-first);
 }
 
 .skills__bar {
@@ -549,35 +567,17 @@ hr {
         width: 100px;
     }
 }
-
 /* BUTTON GITHUB*/
 
-/*diminuir a fonte das letras em telas nao lg*/
+/*CONTACT*/
 
-@media screen and (max-width: 992px) {
-    .text-section {
-        font-size: 2rem;
-    }
-    /* .text-default {
-        font-size: 1.25rem;
-    } */
-    .text-default-small {
-        font-size: 1rem;
-    }
-    #title-sobre-mim {
-        font-size: 1rem;
-    }
-    #text-sobre-mim {
-        border-left: none;
-        font-size: 1rem;
-    }
-    .title-skill {
-        font-size: 20px !important;
-    }
-    .left-arrow, .right-arrow {
-        font-size: 1rem !important;
-    }
+#name,
+#email,
+#message {
+    color: #212121;
+    background-color: whitesmoke;
 }
+/*// CONTACT*/
 
 /*BTN CONTACT*/
 
@@ -616,11 +616,13 @@ hr {
         font-size: 15px;
     }
 }
-
 /*// BTN CONTACT*/
-
-.text-success:hover {
+#email-contact{
+    color: var(--text-third);
+}
+#email-contact:hover {
     text-decoration: none !important;
+    color: #006600;
 }
 
 /*EFFECT HOVER IMG*/
@@ -638,7 +640,7 @@ hr {
     color: white;
     border-radius: .35rem;
     border: 4px solid rgba(255, 255, 255, .9);
-    padding: 10px;
+    padding: 5px 10px 5px 10px;
     opacity: 1.0;
     visibility: hidden;
     opacity: 0;
@@ -678,6 +680,8 @@ hr {
     padding: 10px;
     margin: 0 auto;
     border-radius: 8px;
+
+    margin-top: 2px;
 }
 
 #status.success {
@@ -710,20 +714,20 @@ hr {
 
 /*ANIMATION >><<*/
 
-.text-arrow {
+/* .text-arrow {
     display: inline-block;
+} */
+
+.right-arrow {
+    right: 15%;
+    animation: simple 1s linear infinite;
+    display: inline-block;
+    font-size: 1.5rem;
 }
 
 .left-arrow {
     left: 15%;
     animation: simple1 1s linear infinite;
-    display: inline-block;
-    font-size: 1.5rem;
-}
-
-.right-arrow {
-    right: 15%;
-    animation: simple 1s linear infinite;
     display: inline-block;
     font-size: 1.5rem;
 }

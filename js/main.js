@@ -1,9 +1,19 @@
 /*===== LIGHT MODE =====*/
+//Get our img element by using document.getElementById
+const img = document.querySelector(".profile-photo");
 const html = document.querySelector('html')
 const checkbox = document.querySelector('#switch')
 
 checkbox.addEventListener('change', function () {
     html.classList.toggle('light-mode')
+    //Set the src property of our element to the new image URL
+    // img.src="./img/logo_black.png"
+    if (img.getAttribute('src')=="./img/logo_white.png") {
+        img.setAttribute('src', "./img/logo_black.png");
+     } 
+     else {
+        img.setAttribute('src', "./img/logo_white.png");
+     }
 })
 
 /*===== TYPING ANIMATION =====*/
@@ -24,8 +34,8 @@ const r = ScrollReveal({
 /*scroll top*/
 r.reveal('.animation-scroll', { delay: 200 });
 /*scroll about*/
-r.reveal('.img-sobre-mim', { delay: 400 });
-r.reveal('.text-sobre-mim', { delay: 800 });
+r.reveal('.img-about', { delay: 400 });
+r.reveal('.text-about', { delay: 800 });
 // r.reveal('.test', { interval: 200 });
 
 /*===== CLICK NAME ANIMATION =====*/
