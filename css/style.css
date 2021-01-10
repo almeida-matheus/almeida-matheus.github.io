@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: #212121 !important;
+    background-color: var(--bg-first) !important;
     /*padding-top: 4rem;*/
 }
 
@@ -22,12 +22,41 @@ hr {
     background-color: gray;
 }
 
-.bg-black {
-    background-color: #212121 !important;
+/*===== colors =====*/
+:root {
+    /*bg color*/
+    --bg-first: #212121;
+    --bg-second: #323232;
+    --bg-third: #006600;
+    --bg-fourth: #cccccc;
+    /*text color*/
+    --text-first: #e5e5e5;
+    --text-second: #00a000;
+    --text-third: #212121;
+}
+.light-mode:root {
+    /*bg color*/
+    --bg-first: #e5e5e5;
+    --bg-second: #323232;
+    --bg-third: #006600;
+    --bg-fourth: #323232;
+    /*text color*/
+    --text-first: #212121;
+    --text-second: #00a000;
+    --text-third: #e5e5e5;
 }
 
-.text-grey {
-    color: #C0C0C0;
+.bg-first {
+    background-color: var(--bg-first);
+}
+.bg-fourth {
+    background-color: var(--bg-fourth);
+}
+.text-first {
+    color: var(--text-first);
+}
+.text-third{
+    color: var(--text-third);
 }
 
 @media screen and (min-width: 992px) {
@@ -206,9 +235,9 @@ hr {
 #main-name {
     font-size: 2.3rem;
     font-weight: 800;
-    color: whitesmoke;
     padding-bottom: 15px;
     cursor: pointer;
+    color: var(--text-first);
 }
 
 /*// MAIN SECTION*/
@@ -549,25 +578,6 @@ hr {
         font-size: 1rem !important;
     }
 }
-
-/*CONTACT*/
-
-#name {
-    color: whitesmoke;
-    background-color: #212121;
-}
-
-#email {
-    color: whitesmoke;
-    background-color: #212121;
-}
-
-#message {
-    color: whitesmoke;
-    background-color: #212121;
-}
-
-/*// CONTACT*/
 
 /*BTN CONTACT*/
 

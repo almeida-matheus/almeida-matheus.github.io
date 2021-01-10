@@ -1,3 +1,11 @@
+/*===== LIGHT MODE =====*/
+const html = document.querySelector('html')
+const checkbox = document.querySelector('#switch')
+
+checkbox.addEventListener('change', function () {
+    html.classList.toggle('light-mode')
+})
+
 /*===== TYPING ANIMATION =====*/
 var typed = new Typed(".typing", {
     strings: ["Front-end", "Back-end", "Infraestrutura de TI", "Segurança da Informação", "Redes de Computadores"],
