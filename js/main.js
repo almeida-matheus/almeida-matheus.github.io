@@ -8,13 +8,31 @@ checkbox.addEventListener('change', function () {
     html.classList.toggle('light-mode')
     //Set the src property of our element to the new image URL
     // img.src="./img/logo_black.png"
-    if (img.getAttribute('src')=="./img/logo_white.png") {
+    if (html.getAttribute('class')=="sr light-mode") {
         img.setAttribute('src', "./img/logo_black.png");
      } 
      else {
         img.setAttribute('src', "./img/logo_white.png");
      }
 })
+// if (img.getAttribute('src')=="./img/logo_white.png")
+
+/*===== CHANGE FLAG =====*/
+const flag = document.querySelector(".flag-icon");
+
+flag.addEventListener("mouseover", function () {
+  flag.setAttribute('class', "flag-icon flag-icon-us")
+})
+flag.addEventListener("mouseout", function () {
+  flag.setAttribute('class', "flag-icon flag-icon-br")
+})
+/*===== TYPING ANIMATION =====*/
+var typed = new Typed(".typing", {
+  strings: ["Desenvolvimento Front-end", "Desenvolvimento Back-end", "Sistemas Operacionais", "Segurança da Informação", "Redes de Computadores"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
+});
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const r = ScrollReveal({

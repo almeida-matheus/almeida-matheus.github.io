@@ -14,6 +14,7 @@ html {
 body {
     background-color: var(--bg-first) !important;
     /*padding-top: 4rem;*/
+    transition: ease all 0.4s;
 }
 
 hr {
@@ -125,7 +126,7 @@ hr {
     padding: 0;
 }
 
-.menu-geral {
+.all-navbar {
     margin: 0 auto;
     background-color: (var(--bg-first));
     box-shadow: 0 10px 12px rgba(0, 0, 0, .3)
@@ -170,10 +171,6 @@ hr {
     font-weight: 600;
 }
 
-.checkbox {
-    border-bottom: none !important;
-}
-
 @media screen and (min-width: 992px) {
     .nav-link {
         padding-top: 1.35rem;
@@ -204,31 +201,63 @@ hr {
     }
     #blog {
         padding: 5px 10px 5px 10px !important;
-        margin-top: 0.9rem;
-        margin-left: 8px;
-        margin-right: 8px;
+        margin: 0.9rem 10px 0px 10px;
     }
 }
 
 #blog {
     background-color: var(--bg-third) !important;
     box-shadow: 1px 1px 1px 1px black;
-    color: whitesmoke !important;
+    color: whitesmoke;
 }
 #blog:hover {
     color: var(--text-second);
 }
 
+.checkbox {
+    border-bottom: none !important;
+}
 #switch {
     opacity: 0;
     position: absolute;
     cursor: pointer;
 }
 .fa-adjust{
-    font-size: 25px;
+    font-size: 27px;
     line-height: 20px !important;
     cursor: pointer;
 }
+
+.flag{
+    font-size: 27px;
+    margin: 9.5px 8px 0px 10px;
+}
+.flag span:hover{
+    transform: scale(1.2);
+    transition: all linear 0.3s;
+}
+.flag span:not(:hover){
+    transition: all linear 0.3s;
+}
+/* .all-navbar .dropdown {
+    margin-top: 10px !important;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.all-navbar .dropdown-toggle {
+    font-size: 27px;
+}
+.all-navbar .dropdown-menu {
+    background-color: var(--bg-second);
+    margin-bottom: 10px !important;
+}
+.all-navbar .dropdown-item {
+    color: var(--text-first);
+}
+.all-navbar .dropdown-item:hover {
+    background-color: var(--bg-second);
+    color: var(--text-first);
+} */
 
 /*logo effect*/
 .navbar-brand span {
