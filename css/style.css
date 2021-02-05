@@ -420,32 +420,8 @@ hr {
 .skill .card:hover .title-skill {
     color: whitesmoke !important;
 }
-
-/*skills temp*/
-
-/*LG >*/
-@media screen and (min-width: 992px) {
-    #card-1 {
-        margin-left: auto;
-    }
-    #card-2 {
-        margin-right: auto;
-    }
-}
-
-/* LG <*/
-@media screen and (max-width: 992px) {
-    #card-1 {
-        margin: auto;
-    }
-    #card-2 {
-        margin: auto;
-    }
-}
 /*// skills temp*/
 /*// SKILLS*/
-
-
 
 /*KNOW*/
 .title-know {
@@ -540,12 +516,12 @@ hr {
 
 .button-icon button.git, .button-icon button.git span {
     background: #cccccc;
-    border-left: 1px solid #888888;
-    box-shadow: 0px 5px 0px 0px #888888;
+    border-left: 1px solid #9f9f9f;
+    box-shadow: 0px 5px 0px 0px #9f9f9f;
 }
 
 .button-icon button.git:active {
-    box-shadow: 0px 2px 0px 0px #888888;
+    box-shadow: 0px 2px 0px 0px #9f9f9f;
 }
 
 .button-icon button span {
@@ -607,7 +583,7 @@ hr {
     border: none;
     outline: none !important;
     background-color: #cccccc;
-    box-shadow: 0px 5px 0px 0px #888888;
+    box-shadow: 0px 5px 0px 0px #9f9f9f;
     /* background-color: #004c00;
     box-shadow: 0px 5px 0px 0px #003300; */
 }
