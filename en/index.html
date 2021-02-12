@@ -14,8 +14,12 @@
   <meta name="author" content="matheus almeida costa">
   <meta name="copyright" content="Matheus Almeida © 2021" />
   <title>Matheus Almeida Costa</title>
-  <link rel="icon" href="../img/logo_white.png ">
-  <!-- CSS customizado-->
+  <link rel="icon" href="../img/logo_black.png ">
+  <!--CSS loader-->
+  <link rel='stylesheet' type='text/css' media='screen' href='../css/loader.css'>
+  <!--CSS toggler-->
+  <link rel='stylesheet' type='text/css' media='screen' href='../css/toggler.css'>
+  <!--CSS customizado-->
   <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
   <!--bootstrap CSS-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -27,6 +31,14 @@
 </head>
 
 <body>
+  <!--[LOADER]-->
+  <div class="loader">
+    <div class="loader-inner">
+      <div class="loader-inner"></div>
+    </div>
+  </div>
+  <!-- // [LOADER]-->
+  
   <!--[NAVBAR]-->
   <div class="all-navbar" id="matheus">
     <div class="container">
@@ -70,10 +82,14 @@
               </a>
             </li>
 
-            <label for="switch" class="nav-link checkbox mb-0 pb-0">
+            <!-- <label for="switch" class="nav-link checkbox mb-0 pb-0">
               <input id="switch" type="checkbox">
               <i class="fas fa-adjust"></i>
-            </label>
+            </label> -->
+
+            <div class="center">
+              <input id="switch" type="checkbox" name="toggler theme">
+            </div>
 
             <!--dropright | nav-link-->
             <!-- <li class="nav-item dropdown"> 
@@ -93,7 +109,7 @@
     </div>
   </div>
   <!--//[NAVBAR]-->
-  <span class="text-fourth">.</span>
+  <span>&nbsp;</span>
 
   <section id="main">
     <div class="pt-5 text-center">
@@ -425,8 +441,8 @@
   <!--[FOOTER]-->
   <footer>
     <div class="text-center text-first py-3">
-      <p><a class="text-decoration-none text-first" href="#matheus"> Matheus Almeida © </a>
-        2021</p>
+      <p><a class="text-decoration-none text-first" href="#matheus">Matheus Almeida </a>
+        © 2021</p>
     </div>
   </footer>
   <!--// [FOOTER]-->

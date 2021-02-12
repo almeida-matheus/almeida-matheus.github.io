@@ -44,13 +44,13 @@ hr {
     /*bg color*/
     --bg-first: #e5e5e5;
     --bg-second: #cccccc;/*#b7b7b7*/
-    --bg-third: #0000ff; 
+    --bg-third: #0040ff ; 
     --bg-fourth: #212121;
     --bg-fifth: #0000cc;
     /*text color*/
     --text-first: #212121;
     --text-second: #b7b7b7;
-    --text-third: #0000ff;
+    --text-third: #0040ff ;
     --text-fourth: #e5e5e5;
     --text-fifth: #0000cc;
 }
@@ -177,8 +177,6 @@ hr {
         padding-bottom: 1.35rem;
         border-bottom: none;
         margin-left: 0rem;
-        /*opcional se quiser distanciar os links do menu*/
-        /*se tivesse cor no background era só colocar background-color: transparent; em .navbar-nav*/
     }
     /*transição ao passar o mouse*/
     .nav-effect:hover {
@@ -214,7 +212,7 @@ hr {
     color: var(--text-second);
 }
 
-.checkbox {
+/* .checkbox {
     border-bottom: none !important;
 }
 #switch {
@@ -226,11 +224,11 @@ hr {
     font-size: 27px;
     line-height: 20px !important;
     cursor: pointer;
-}
+} */
 
 .flag{
-    font-size: 27px;
-    margin: 9.5px 8px 0px 10px;
+    font-size: 32px;
+    margin: 6.4px 16px 0px 10px;
 }
 .flag span:hover{
     transform: scale(1.2);

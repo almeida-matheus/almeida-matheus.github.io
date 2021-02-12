@@ -1,21 +1,41 @@
+/*===== LOADER ====*/
+// quando carregar o javascript exclui a div do loader
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    // loader.className += " hidden";
+    loader.parentElement.removeChild(loader);
+});
+
 /*===== LIGHT MODE =====*/
 //Get our img element by using document.getElementById
 const img = document.querySelector(".profile-photo");
 const html = document.querySelector('html')
 const checkbox = document.querySelector('#switch')
 
+//se a chave tiver algum valor = tema claro
+if (localStorage.getItem("theme")) {
+    theme = localStorage.getItem("theme")
+    html.classList.toggle(theme)
+    img.setAttribute('src', "../img/logo_black.png");
+    checkbox.checked = true;
+}
+
+//se o checkbox for clicado
 checkbox.addEventListener('change', function () {
     html.classList.toggle('light-mode')
     //Set the src property of our element to the new image URL
-    // img.src="./img/logo_black.png"
-    if (html.getAttribute('class')=="sr light-mode") {
+    // if (img.getAttribute('src')=="./img/logo_white.png")
+    // if (html.getAttribute('class')=="sr light-mode") {
+    if (html.classList[1] == 'light-mode') {
         img.setAttribute('src', "../img/logo_black.png");
-     } 
-     else {
+        localStorage.setItem("theme", "light-mode")
+        // img.src="./img/logo_black.png"
+    }
+    else {
         img.setAttribute('src', "../img/logo_white.png");
-     }
+        localStorage.setItem("theme", "")
+    }
 })
-// if (img.getAttribute('src')=="./img/logo_white.png")
 
 /*===== CHANGE FLAG =====*/
 const flag = document.querySelector(".flag-icon");
