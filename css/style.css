@@ -81,18 +81,14 @@ hr {
 }
 
 /*===== font size =====*/
-.big-font-size {
-    font-size: 3rem;
-}
-
 .normal-font-size{
     font-size: 1.5rem;
 }
 
 /*< LG*/
 @media screen and (max-width: 992px) {
-    .big-font-size {
-        font-size: 2rem;
+    .h1-line span {
+        font-size: 2rem !important;
     }
     .normal-font-size{
         font-size: 1rem;
@@ -116,24 +112,64 @@ hr {
 
 @media screen and (min-width: 992px) {
     #main {
-        height: 89vh;
+        height: 96vh;
     }
 }
 
-/*NAVBAR*/
-
-.navbar {
-    padding: 0;
+/*H1 TITLE*/
+.h1-line {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
 }
 
+.h1-line span {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-first);
+    position: relative;
+
+    display: inline; /*se for h1*/
+}
+
+.h1-line span::before, .h1-line span::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 150px;
+    bottom: -5%;
+    right: 0px;
+    /* background: rgba(255, 255, 255, 0.3); */
+    background: var(--bg-fifth);
+}
+
+.h1-line span::after {
+    left: 0px;
+}
+
+/*// H1 TITLE*/
+
+/*NAVBAR*/
 .all-navbar {
     margin: 0 auto;
-    background-color: (var(--bg-first));
-    box-shadow: 0 10px 12px rgba(0, 0, 0, .3)
+    background-color: var(--bg-first) !important;
+
+    /*for scroll*/
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    transition: all .5s ease;
+}
+/*Apply styles after scroll*/
+.scrolling-active{
+    box-shadow: 0 10px 12px rgba(0, 0, 0, .3);
+    background-color: var(--bg-first) !important;
 }
 
-/*logo*/
-
+/* .scrolling-active .nav{
+    height: 6.6rem;
+} */
+/*LOGO*/
 .navbar-brand {
     /*background-color: #63c6ae;*/
     color: var(--text-first);
@@ -147,18 +183,49 @@ hr {
     transition: all 0.3s;
     margin-bottom: 0.3rem;
 }
-
 .navbar-brand:hover {
     color: var(--text-second);
 }
-
-/*todos links*/
-
-.navbar-nav {
-    /*background-color: #242a2c;*/
+/*logo effect*/
+.navbar-brand span {
+    display: inline-block;
+    color: var(--text-first);
+    background-color: var(--bg-fourth);
     text-align: center;
+    width: 12px;
+    height: 17px;
+    line-height: 15px;
+    font-size: 20px;
 }
 
+@keyframes fa-blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fa-blink {
+    -webkit-animation: fa-blink 1.0s linear infinite;
+    -moz-animation: fa-blink 1.0s linear infinite;
+    -ms-animation: fa-blink 1.0s linear infinite;
+    -o-animation: fa-blink 1.0s linear infinite;
+    animation: fa-blink 1.0s linear infinite;
+}
+/*// logo effect*/
+/*//LOGO*/
+
+/*todos links a direita*/
+.navbar-nav {
+    /* background-color: #242a2c; */
+    text-align: center;
+}
+/*cada link a direita*/
 .nav-link {
     display: block;
     padding-top: 1.25rem !important;
@@ -171,14 +238,16 @@ hr {
     font-weight: 600;
 }
 
+/*responsividade nav tela desktop*/
 @media screen and (min-width: 992px) {
+    /*cada link a direita*/
     .nav-link {
         padding-top: 1.35rem;
         padding-bottom: 1.35rem;
         border-bottom: none;
         margin-left: 0rem;
     }
-    /*transição ao passar o mouse*/
+    /*cada link a direita com classe nav-effect*/
     .nav-effect:hover {
         color: var(--text-third);
     }
@@ -237,39 +306,6 @@ hr {
 .flag span:not(:hover){
     transition: all linear 0.3s;
 }
-
-/*logo effect*/
-.navbar-brand span {
-    display: inline-block;
-    color: var(--text-first);
-    background-color: var(--bg-fourth);
-    text-align: center;
-    width: 12px;
-    height: 17px;
-    line-height: 15px;
-    font-size: 20px;
-}
-
-@keyframes fa-blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-.fa-blink {
-    -webkit-animation: fa-blink 1.0s linear infinite;
-    -moz-animation: fa-blink 1.0s linear infinite;
-    -ms-animation: fa-blink 1.0s linear infinite;
-    -o-animation: fa-blink 1.0s linear infinite;
-    animation: fa-blink 1.0s linear infinite;
-}
-/*// logo effect*/
 /*// NAVBAR*/
 
 /*MAIN SECTION*/

@@ -32,17 +32,18 @@
 
 <body>
   <!--[LOADER]-->
-  <div class="loader">
-    <div class="loader-inner">
-      <div class="loader-inner"></div>
-    </div>
+  <div class="container-loader">
+      <span class="loader">
+        <span class="loader-inner"></span>
+      </span>
   </div>
   <!-- // [LOADER]-->
 
   <!--[NAVBAR]-->
-  <div class="all-navbar" id="matheus">
+  <div class="all-navbar">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
+        <!--LOGO-->
         <a class="navbar-brand pr-0 mr-0" href="#matheus">cd /home/matheus/ <span class="fa-blink">.</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
@@ -109,7 +110,7 @@
     </div>
   </div>
   <!--//[NAVBAR]-->
-  <span>&nbsp;</span>
+  <span id="matheus">&nbsp;</span>
 
   <section id="main">
     <div class="pt-5 text-center">
@@ -139,7 +140,9 @@
 
   <hr id="sobre-mim">
   <div class="container about">
-    <h1 class="big-font-size text-first text-center my-5 animation-scroll">Sobre mim</h1>
+    <div class="h1-line animation-scroll">
+      <span class="text-first my-5 ">Sobre mim</span>
+    </div>
 
     <div class="row d-flex justify-content-center pb-5">
 
@@ -172,7 +175,10 @@
   <hr id="habilidades">
 
   <div class="container skill animation-scroll">
-    <h1 class="big-font-size text-center text-first text-wrap mt-5">Habilidades</h1>
+
+    <div class="h1-line">
+      <span class="text-wrap mt-5">Habilidades</span>
+    </div>
 
     <div class=" d-flex row justify-content-center">
 
@@ -378,8 +384,10 @@
   <!--[FORM]-->
   <section class="animation-scroll">
     <div class="container mt-5">
-      <h1 class="big-font-size text-center text-first">Contato</h1>
-      <div class="row justify-content-center mb-1">
+      <div class="h1-line">
+        <span>Contato</span>
+      </div>
+      <div class="row justify-content-center mt-2 mb-1">
         <div class="col-12 col-md-9">
           <form action="https://formspree.io/f/mrgoegbl" method="POST" id="my-form">
             <div class="form-row">

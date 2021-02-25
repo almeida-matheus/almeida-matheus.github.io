@@ -1,10 +1,18 @@
 /*===== LOADER ====*/
 // quando carregar o javascript exclui a div do loader
 window.addEventListener("load", function () {
-    const loader = document.querySelector(".loader");
+    const cloader = document.querySelector(".container-loader");
     // loader.className += " hidden";
-    loader.parentElement.removeChild(loader);
+    cloader.parentElement.removeChild(cloader);
 });
+
+/*===== NAV ON SCROLL =====*/
+window.addEventListener('scroll', function () {
+    let header = document.querySelector('.all-navbar');
+    let windowPosition = window.scrollY > 0;
+    //só vai acionar o toogler quando o window.scrollY for maior q 0
+    header.classList.toggle('scrolling-active', windowPosition);
+})
 
 /*===== LIGHT MODE =====*/
 //Get our img element by using document.getElementById
