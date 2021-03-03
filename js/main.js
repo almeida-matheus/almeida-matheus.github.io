@@ -16,7 +16,7 @@ window.addEventListener('scroll', function () {
 
 /*===== LIGHT MODE =====*/
 //Get our img element by using document.getElementById
-const img = document.querySelector(".profile-photo");
+const img = document.getElementById('main-img')
 const html = document.querySelector('html')
 const checkbox = document.querySelector('#switch')
 
@@ -24,7 +24,7 @@ const checkbox = document.querySelector('#switch')
 if (localStorage.getItem("theme")) {
     theme = localStorage.getItem("theme")
     html.classList.toggle(theme)
-    img.setAttribute('src', "./img/logo_black.png");
+    img.setAttribute('src', "./assets/logo_black.png");
     checkbox.checked = true;
 }
 
@@ -35,12 +35,12 @@ checkbox.addEventListener('change', function () {
     // if (img.getAttribute('src')=="./img/logo_white.png")
     // if (html.getAttribute('class')=="sr light-mode") {
     if (html.classList[1] == 'light-mode') {
-        img.setAttribute('src', "./img/logo_black.png");
+        img.setAttribute('src', "./assets/logo_black.png");
         localStorage.setItem("theme", "light-mode")
         // img.src="./img/logo_black.png"
     }
     else {
-        img.setAttribute('src', "./img/logo_white.png");
+        img.setAttribute('src', "./assets/logo_white.png");
         localStorage.setItem("theme", "")
     }
 })
