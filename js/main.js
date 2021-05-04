@@ -13,7 +13,16 @@ window.addEventListener('scroll', function () {
     //só vai acionar o toogler quando o window.scrollY for maior q 0
     header.classList.toggle('scrolling-active', windowPosition);
 })
-
+/*===== SCROLL TO TOP BUTTON =====*/
+const btntoTop = document.querySelector(".btn-to-top");
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 1800) {
+    btntoTop.classList.add("active");
+  } 
+  else {
+    btntoTop.classList.remove("active");
+  }
+})
 /*===== LIGHT MODE =====*/
 //Get our img element by using document.getElementById
 const img = document.getElementById('main-img')

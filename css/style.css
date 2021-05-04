@@ -158,10 +158,10 @@ hr {
     box-shadow: 0 10px 12px rgba(0, 0, 0, .3);
     background-color: var(--bg-first) !important;
 }
+.all-navbar.scrolling-active{
+    padding: 0;
+}
 
-/* .scrolling-active .nav{
-    height: 6.6rem;
-} */
 /*LOGO*/
 .navbar-brand {
     /*background-color: #63c6ae;*/
@@ -231,7 +231,7 @@ hr {
     font-weight: 600;
 }
 
-/*responsividade nav tela desktop*/
+/*! responsividade nav tela desktop*/
 @media screen and (min-width: 992px) {
     /*cada link a direita*/
     .nav-link {
@@ -263,6 +263,50 @@ hr {
         padding: 5px 10px 5px 10px !important;
         margin: 0.9rem 10px 0px 10px;
     }
+}
+/*! plus tela desktop*/
+@media screen and (min-width: 992px) {
+    /*scroll top effect*/
+    .all-navbar{
+        /* height: 250px !important; */
+        padding: 20px;
+    }
+    /*? btn to top*/
+    .btn-to-top{
+        position: fixed;
+        bottom: 12px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: var(--bg-fourth);
+        color: var(--text-fourth);
+        box-shadow: 1px 1px 1px 1px black;
+
+        border-radius: 3px;
+        font-size: 26px;
+        pointer-events: none;
+        text-decoration: none !important;
+
+        transition: all .4s;
+
+        z-index: 99999;
+        opacity:0;
+        cursor: pointer;
+    }  
+    .btn-to-top.active {
+        bottom: 32px;
+        pointer-events: auto;
+        opacity:1;
+    }
+    .btn-to-top.active:hover {
+        color: var(--text-third);
+    }
+/* // btn to top*/
 }
 
 #blog {
@@ -301,7 +345,7 @@ hr {
 }
 /*// NAVBAR*/
 
-/*MAIN SECTION*/
+/*! MAIN SECTION*/
 @media screen and (min-width: 540px) {
     #main {
         margin-top: 270px !important;
