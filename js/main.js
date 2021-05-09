@@ -13,8 +13,9 @@ window.addEventListener('scroll', function () {
     //só vai acionar o toogler quando o window.scrollY for maior q 0
     header.classList.toggle('scrolling-active', windowPosition);
 })
+
 /*===== SCROLL TO TOP BUTTON =====*/
-const btntoTop = document.querySelector(".btn-to-top");
+const btntoTop = document.querySelector(".to-top__btn");
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 1800) {
     btntoTop.classList.add("active");
@@ -23,12 +24,13 @@ window.addEventListener("scroll", () => {
     btntoTop.classList.remove("active");
   }
 })
+
 /*===== LIGHT MODE =====*/
 //Get our img element by using document.getElementById
+// const img = document.getElementById('main-img')
 const img = document.getElementById('main-img')
 const html = document.querySelector('html')
 const checkbox = document.querySelector('#switch')
-
 //se a chave tiver algum valor = tema claro
 if (localStorage.getItem("theme")) {
     theme = localStorage.getItem("theme")
@@ -36,7 +38,6 @@ if (localStorage.getItem("theme")) {
     img.setAttribute('src', "./assets/logo_black.png");
     checkbox.checked = true;
 }
-
 //se o checkbox for clicado
 checkbox.addEventListener('change', function () {
     html.classList.toggle('light-mode')
@@ -72,6 +73,15 @@ var typed = new Typed(".typing", {
     loop: true
 });
 
+/*===== OWL CAROUSEL ANIMATION =====*/
+$(".owl-slider").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000, //3000ms = 3s;
+    autoplayHoverPause: true,
+    items:4,
+});
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const r = ScrollReveal({
     origin: 'top',
@@ -87,21 +97,21 @@ r.reveal('.animation-text-about', { delay: 800 });
 // r.reveal('.test', { interval: 200 });
 
 /*===== CLICK NAME ANIMATION =====*/
-var foo = document.querySelector('#main-name');
+// var foo = document.querySelector('#main-name');
 
-foo.addEventListener('click', function () {
-    foo.className = 'animate__animated animate__pulse';
-});
+// foo.addEventListener('click', function () {
+//     foo.className = 'animate__animated animate__pulse';
+// });
 
-foo.addEventListener('webkitAnimationEnd', removeClass);
-foo.addEventListener('mozAnimationEnd', removeClass);
-foo.addEventListener('MSAnimationEnd', removeClass);
-foo.addEventListener('oanimationend', removeClass);
-foo.addEventListener('animationend', removeClass);
+// foo.addEventListener('webkitAnimationEnd', removeClass);
+// foo.addEventListener('mozAnimationEnd', removeClass);
+// foo.addEventListener('MSAnimationEnd', removeClass);
+// foo.addEventListener('oanimationend', removeClass);
+// foo.addEventListener('animationend', removeClass);
 
-function removeClass() {
-    foo.className = '';
-}
+// function removeClass() {
+//     foo.className = '';
+// }
 
 /*===== CLICK CONTACT ANIMATION =====*/
 window.addEventListener("DOMContentLoaded", function () {
