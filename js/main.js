@@ -17,17 +17,16 @@ window.addEventListener('scroll', function () {
 /*===== SCROLL TO TOP BUTTON =====*/
 const btntoTop = document.querySelector(".to-top__btn");
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 1800) {
-    btntoTop.classList.add("active");
-  } 
-  else {
-    btntoTop.classList.remove("active");
-  }
+    if (window.pageYOffset > 2000) {
+        btntoTop.classList.add("active");
+    }
+    else {
+        btntoTop.classList.remove("active");
+    }
 })
 
 /*===== LIGHT MODE =====*/
 //Get our img element by using document.getElementById
-// const img = document.getElementById('main-img')
 const img = document.getElementById('main-img')
 const html = document.querySelector('html')
 const checkbox = document.querySelector('#switch')
@@ -79,7 +78,7 @@ $(".owl-slider").owlCarousel({
     autoplay: true,
     autoplayTimeout: 2000, //3000ms = 3s;
     autoplayHoverPause: true,
-    items:4,
+    items: 4,
 });
 
 /*===== SCROLL REVEAL ANIMATION =====*/
@@ -97,21 +96,21 @@ r.reveal('.animation-text-about', { delay: 800 });
 // r.reveal('.test', { interval: 200 });
 
 /*===== CLICK NAME ANIMATION =====*/
-// var foo = document.querySelector('#main-name');
+var foo = document.querySelector('#main-name');
 
-// foo.addEventListener('click', function () {
-//     foo.className = 'animate__animated animate__pulse';
-// });
+foo.addEventListener('click', function () {
+    foo.className = 'animate__animated animate__pulse';
+});
 
-// foo.addEventListener('webkitAnimationEnd', removeClass);
-// foo.addEventListener('mozAnimationEnd', removeClass);
-// foo.addEventListener('MSAnimationEnd', removeClass);
-// foo.addEventListener('oanimationend', removeClass);
-// foo.addEventListener('animationend', removeClass);
+foo.addEventListener('webkitAnimationEnd', removeClass);
+foo.addEventListener('mozAnimationEnd', removeClass);
+foo.addEventListener('MSAnimationEnd', removeClass);
+foo.addEventListener('oanimationend', removeClass);
+foo.addEventListener('animationend', removeClass);
 
-// function removeClass() {
-//     foo.className = '';
-// }
+function removeClass() {
+    foo.className = '';
+}
 
 /*===== CLICK CONTACT ANIMATION =====*/
 window.addEventListener("DOMContentLoaded", function () {

@@ -31,13 +31,13 @@
     <!--favicon-->
     <link rel="icon" href="./assets/logo_black.png">
     <!--CSS loader-->
-    <link rel='stylesheet' type='text/css' media='screen' href='css/loader.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/loader.css'>
     <!--CSS toggler-->
-    <link rel='stylesheet' type='text/css' media='screen' href='css/toggler.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/toggler.css'>
     <!--CSS customizado-->
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
     <!--CSS normalize-->
-    <link rel='stylesheet' type='text/css' media='screen' href='css/normalize.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/normalize.css'>
     <!--bootstrap CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -50,22 +50,7 @@
 </head>
 
 <body>
-    <!--[LOADER]-->
-    <div class="container-loader">
-        <span class="loader">
-            <span class="loader-inner"></span>
-        </span>
-    </div>
-    <!--// [LOADER]-->
-    <!--[BTN SCROLL TOP]-->
-    <div class="to-top">
-        <a href="#" class="to-top__btn">
-            <i class="fas fa-chevron-up"></i>
-        </a>
-    </div>
-    <!-- // [BTN SCROLL TOP]-->
-    <!--[NAVBAR]-->
-    <div class="all-navbar">
+    <header class="all-navbar">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <!--LOGO-->
@@ -89,37 +74,30 @@
                         <li class="nav-item">
                             <a class="nav-link nav-effect" href="#habilidades">habilidades</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#projetos">projetos</a>
-                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-effect" href="#projetos">projetos</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link nav-effect" href="#contato">contato</a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link d-none d-lg-block">|</a>
-                        </li>
-
                         <li class="nav-item">
                             <a id="blog" class="nav-link" href="https://blog.matheustech.com.br" rel="noopener"
                                 target="_blank">blog</a>
                         </li>
-
                         <div class="flag" rel="noopener">
                             <a href="https://matheustech.com.br/en">
                                 <span class="flag-icon flag-icon-br"></span>
                             </a>
                         </div>
-
-                        <!-- <label for="switch" class="nav-link checkbox mb-0 pb-0">
-                                <input id="switch" type="checkbox">
-                                <i class="fas fa-adjust"></i>
-                            </label> -->
-
+                        <!-- 
+                        <label for="switch" class="nav-link checkbox mb-0 pb-0">
+                            <input id="switch" type="checkbox">
+                            <i class="fas fa-adjust"></i>
+                        </label>
+                        -->
                         <div class="center">
                             <input id="switch" type="checkbox" name="toggler theme">
                         </div>
-
                         <!--dropright | nav-link-->
                         <!-- <li class="nav-item dropdown"> 
                         <a class="dropdown-toggle" href="http://example.com" id="dropdown-flag" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -130,21 +108,19 @@
                         <span class="flag-icon flag-icon-us"> </span> Inglês</a>
                         </div>
                         </li> -->
-
                     </ul>
                 </div>
-
             </nav>
         </div>
-    </div>
-    <!--//[NAVBAR]-->
+    </header>
     <span>&nbsp;</span>
+
     <section class="main">
         <div id="main" class="container">
             <div class="main__img">
                 <img id="main-img" src="./assets/logo_white.png" alt="logo">
             </div>
-            <h1 id="main-name" class="main__name animate__animated animate__pulse">
+            <h1 id="main-name" class="animate__animated animate__pulse">
                 Matheus Almeida Costa
             </h1>
             <!-- <p class="text-grey font-weight-bold py-2">Web Development - Cyber Security - Computer Network</p> -->
@@ -167,11 +143,11 @@
 
     <section id="sobre-mim" class="about">
         <div class="container">
-            <div class="h1-line animation-scroll">
-                <span class="text-first my-5 ">Sobre mim</span>
+            <div class="h1-line animation-scroll mb-2">
+                <span class="text-first mb-5 ">Sobre mim</span>
             </div>
 
-            <div class="row d-flex justify-content-center pb-5">
+            <div class="row d-flex justify-content-center pb-5 mb-3">
 
                 <div class="col-md-4 text-center text-md-right animation-img-about">
                     <img class="img-fluid" src="./assets/profile_about.jpg" alt="matheus almeida costa"
@@ -189,11 +165,12 @@
                             informação.<br>
                             Tenho muito interesse em tecnologia da informação, por isso estou sempre estudando
                             e aperfeiçoando meus conhecimentos nessa área, inclusive compartilho um pouco disso no meu
-                            <a class="about__link" href="https://blog.matheustech.com.br" rel="noopener" target="__blank">blog</a>.<br>
-                            Atualmente meu foco de aprendizado é desenvolvimento web, servidores linux e segurança da
+                            <a class="about__link" href="https://blog.matheustech.com.br" rel="noopener"
+                                target="__blank">blog</a>.<br>
+                            Atualmente meu foco de aprendizado é desenvolvimento web, linux e segurança da
                             informação.<br>
                             <!-- (programação, redes de computadores, sistemas operacionais, hacking, computação em nuvem, hardwares).
-                        Atualmente meu foco de aprendizado é desenvolvimento web e servidores linux. -->
+                            Atualmente meu foco de aprendizado é desenvolvimento web e servidores linux. -->
                         </p>
                         <div class="about__btn pl-md-3">
                             <a href="https://bit.ly/CV-matheus" rel="noopener" target="__blank" download>
@@ -212,7 +189,7 @@
         <div class="container animation-scroll">
 
             <div class="h1-line">
-                <span class="text-wrap mt-5">Habilidades</span>
+                <span class="text-wrap mb-3">Habilidades</span>
             </div>
 
             <div class="d-flex row justify-content-center">
@@ -281,10 +258,10 @@
                     </div>
                 </div>
             </div>
-            <!--d-none d-md-block: se passar do md ele aparece-->
-            <div class="d-none d-lg-block">
-
+            <!--SHOW DESKTOP-->
+            <div class="d-none d-md-block">
                 <div class="d-flex row justify-content-center mb-0 mt-5">
+
                     <div class="owl-slider owl-carousel">
 
                         <div class="skills__data owl mx-4">
@@ -322,7 +299,7 @@
                             </div>
                         </div>
 
-                        <div class="skills__data owl mx-4">
+                        <!-- <div class="skills__data owl mx-4">
                             <div class="skills__names">
                                 <i class="skills_icon bx bxl-jquery"></i>
                                 <span class="skills__name">jQuery</span>
@@ -332,7 +309,7 @@
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="skills__data owl mx-4">
                             <div class="skills__names">
@@ -349,6 +326,7 @@
 
                 </div>
             </div>
+            <!--SHOW DESKTOP-->
             <div class="d-none d-md-block">
 
                 <div class="d-flex row justify-content-center mb-0 mt-5">
@@ -389,109 +367,130 @@
                                 <span class="skills__percentage"></span>
                             </div>
                         </div>
-
+                        <div class="skills__data owl mx-4">
+                            <div class="skills__names">
+                                <i class="skills_icon fab fa-node-js"></i>
+                                <span class="skills__name">Node.js</span>
+                            </div>
+                            <div class="skills__bar">
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <!-- <div class="skills__data owl mx-4">
+                            <div class="skills__names">
+                                <i class="skills_icon bx bx-cube"></i>fab fa-node-js
+                                <span class="skills__name">Shell Script</span>
+                            </div>
+                            <div class="skills__bar">
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
+            </div>
 
-                <!--d-none d-md-block: se passar do md ele aparece-->
-                <div class="d-md-none">
-                    <div class="d-flex row justify-content-center mb-0 mt-5">
+            <!--SHOW MOBILE-->
+            <div class="d-block d-md-none">
+                <div class="d-flex row justify-content-center mb-0 mt-5">
 
-                        <div class="col-12 col-sm-4">
-                            <p class="title-know text-first">Front-end</p>
+                    <div class="col-12 col-sm-4">
+                        <p class="title-know text-first">Front-end</p>
 
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class="skills_icon fab fa-html5"></i>
-                                    <span class="skills__name">HTML</span>
-                                </div>
-                                <div class="skills__bar">
-                                </div>
-                                <div>
-                                    <span class="skills__percentage"></span>
-                                </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="skills_icon fab fa-html5"></i>
+                                <span class="skills__name">HTML</span>
                             </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class="skills_icon fab fa-css3-alt"></i>
-                                    <span class="skills__name">CSS</span>
-                                </div>
-                                <div class="skills__bar">
-                                </div>
-                                <div>
-                                    <span class="skills__percentage"></span>
-                                </div>
+                            <div class="skills__bar">
                             </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class="skills_icon fab fa-js-square"></i>
-                                    <span class="skills__name">Javascript</span>
-                                </div>
-                                <div class="skills__bar">
-                                </div>
-                                <div>
-                                    <span class="skills__percentage"></span>
-                                </div>
+                            <div>
+                                <span class="skills__percentage"></span>
                             </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class="skills_icon fab fa-bootstrap"></i>
-                                    <span class="skills__name">Bootstrap</span>
-                                </div>
-                                <div class="skills__bar">
-                                </div>
-                                <div>
-                                    <span class="skills__percentage"></span>
-                                </div>
-                            </div>
-
                         </div>
 
-                        <div class="col-12 col-sm-4">
-                            <p class="title-know text-first">Back-end</p>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class="skills_icon fab fa-python"></i>
-                                    <span class="skills__name">Python</span>
-                                </div>
-                                <div class="skills__bar">
-                                </div>
-                                <div>
-                                    <span class="skills__percentage"></span>
-                                </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="skills_icon fab fa-css3-alt"></i>
+                                <span class="skills__name">CSS</span>
                             </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='skills_icon bx bxl-django'></i>
-                                    <span class="skills__name">Django</span>
-                                </div>
-                                <div class="skills__bar">
-                                </div>
-                                <div>
-                                    <span class="skills__percentage"></span>
-                                </div>
+                            <div class="skills__bar">
                             </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class="skills_icon fas fa-database"></i>
-                                    <span class="skills__name">SQL</span>
-                                </div>
-                                <div class="skills__bar">
-                                </div>
-                                <div>
-                                    <span class="skills__percentage"></span>
-                                </div>
+                            <div>
+                                <span class="skills__percentage"></span>
                             </div>
+                        </div>
 
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="skills_icon fab fa-js-square"></i>
+                                <span class="skills__name">Javascript</span>
+                            </div>
+                            <div class="skills__bar">
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="skills_icon fab fa-bootstrap"></i>
+                                <span class="skills__name">Bootstrap</span>
+                            </div>
+                            <div class="skills__bar">
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
                         </div>
 
                     </div>
+
+                    <div class="col-12 col-sm-4">
+                        <p class="title-know text-first">Back-end</p>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="skills_icon fab fa-python"></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar">
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='skills_icon bx bxl-django'></i>
+                                <span class="skills__name">Django</span>
+                            </div>
+                            <div class="skills__bar">
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="skills_icon fas fa-database"></i>
+                                <span class="skills__name">SQL</span>
+                            </div>
+                            <div class="skills__bar">
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
 
@@ -501,8 +500,8 @@
     <section id="projetos" class="projects">
         <div class="container animation-scroll">
 
-            <div class="h1-line">
-                <span class="mt-5 mb-3">Projetos</span>
+            <div class="h1-line pb-4">
+                <span>Projetos</span>
             </div>
 
             <!-- <div class="h2-line">
@@ -533,6 +532,7 @@
                         </div>
                     </div>
                 </div> -->
+
                 <div class="col-12 col-md-6 col-xl-3 my-3">
 
                     <div class="project1__card">
@@ -543,9 +543,10 @@
                         <div class="project1__body">
                             <div class="project1__wrapper">
                                 <p class="project1_title">Gerador de senhas</p>
-                                <p class="project1__description">Aplicação WEB para gerar senhas aleatórias</p>
+                                <p class="project1__description">Aplicação web para gerar senhas aleatórias</p>
                                 <div class="project1__footer">
-                                    <a class="" rel="noopener" target="_blank" href="https://almeida-matheus.github.io/front-end/gerador-senha/index.html">
+                                    <a class="" rel="noopener" target="_blank"
+                                        href="https://almeida-matheus.github.io/front-end/gerador-senha/index.html">
                                         Ver projeto
                                     </a>
                                 </div>
@@ -562,10 +563,11 @@
                         <div class="project1__body">
                             <div class="project1__wrapper">
                                 <p class="project1_title">Tempo e clima</p>
-                                <p class="project1__description">Aplicação WEB para consultar tempo, clima e temperatura
+                                <p class="project1__description">Aplicação web para consulta de tempo, clima e temperatura
                                 </p>
                                 <div class="project1__footer">
-                                    <a class="" rel="noopener" target="_blank" href="https://almeida-matheus.github.io/front-end/weather/index.html">
+                                    <a class="" rel="noopener" target="_blank"
+                                        href="https://almeida-matheus.github.io/front-end/weather/index.html">
                                         Ver projeto
                                     </a>
                                 </div>
@@ -582,10 +584,11 @@
                         <div class="project1__body">
                             <div class="project1__wrapper">
                                 <p class="project1_title">Lista de tarefas</p>
-                                <p class="project1__description">Aplicação WEB para gerenciar lista de afazeres
+                                <p class="project1__description">Aplicação web para gerenciar lista de afazeres
                                 </p>
                                 <div class="project1__footer">
-                                    <a class="" rel="noopener" target="_blank" href="https://almeida-matheus.github.io/front-end/lista-tarefas/index.html">
+                                    <a class="" rel="noopener" target="_blank"
+                                        href="https://almeida-matheus.github.io/front-end/lista-tarefas/index.html">
                                         Ver projeto
                                     </a>
                                 </div>
@@ -600,11 +603,11 @@
                         </div>
                         <div class="project1__body">
                             <div class="project1__wrapper">
-                                <p class="project1_title">Financias</p>
-                                <p class="project1__description">Aplicação WEB para calcular entradas e saídas de
-                                    dinheiro</p>
+                                <p class="project1_title">Gerenciar financias</p>
+                                <p class="project1__description">Aplicação web para calcular entradas e saídas de dinheiro</p>
                                 <div class="project1__footer">
-                                    <a class="" rel="noopener" target="_blank" href="https://almeida-matheus.github.io/front-end/finances/index.html">
+                                    <a class="" rel="noopener" target="_blank"
+                                        href="https://almeida-matheus.github.io/front-end/finances/index.html">
                                         Ver projeto
                                     </a>
                                 </div>
@@ -621,10 +624,11 @@
                             <div class="project1__wrapper">
                                 <p class="project1_title">Agenda</p>
                                 <p class="project1__description">
-                                    Aplicação WEB para gerenciar contatos na agenda
+                                    Aplicação web para gerenciar contatos na agenda
                                 </p>
                                 <div class="project1__footer">
-                                    <a class="" rel="noopener" target="_blank" href="https://github.com/almeida-matheus/agenda">
+                                    <a class="" rel="noopener" target="_blank"
+                                        href="https://github.com/almeida-matheus/agenda">
                                         Ver projeto
                                     </a>
                                 </div>
@@ -640,9 +644,10 @@
                         <div class="project1__body">
                             <div class="project1__wrapper">
                                 <p class="project1_title">NPS</p>
-                                <p class="project1__description">Aplicação WEB para calcular o NPS</p>
+                                <p class="project1__description">Aplicação web para calcular o NPS</p>
                                 <div class="project1__footer">
-                                    <a class="" rel="noopener" target="_blank" href="https://github.com/almeida-matheus/nps">
+                                    <a class="" rel="noopener" target="_blank"
+                                        href="https://github.com/almeida-matheus/nps">
                                         Ver projeto
                                     </a>
                                 </div>
@@ -653,14 +658,16 @@
                 <div class="col-12 col-md-6 col-xl-3 my-3">
                     <div class="project1__card">
                         <div class="project1__img">
-                            <img class="img-fluid" src="./assets/projects/password-manager.png" alt="password manager script">
+                            <img class="img-fluid" src="./assets/projects/password-manager.png"
+                                alt="password manager script">
                         </div>
                         <div class="project1__body">
                             <div class="project1__wrapper">
                                 <p class="project1_title">Gerenciador de senhas</p>
-                                <p class="project1__description">Script gerenciar senhas</p>
+                                <p class="project1__description">Script para gerenciar login de plataformas</p>
                                 <div class="project1__footer">
-                                    <a class="" rel="noopener" target="_blank" href="https://github.com/almeida-matheus/password-manager">
+                                    <a class="" rel="noopener" target="_blank"
+                                        href="https://github.com/almeida-matheus/password-manager">
                                         Ver projeto
                                     </a>
                                 </div>
@@ -676,9 +683,10 @@
                         <div class="project1__body">
                             <div class="project1__wrapper">
                                 <p class="project1_title">NAM</p>
-                                <p class="project1__description">Script visualizar funções de comandos linux</p>
+                                <p class="project1__description">Script visualizar as principais funções de comandos linux</p>
                                 <div class="project1__footer">
-                                    <a class="" rel="noopener" target="_blank" href="https://github.com/almeida-matheus/nam">
+                                    <a class="" rel="noopener" target="_blank"
+                                        href="https://github.com/almeida-matheus/nam">
                                         Ver projeto
                                     </a>
                                 </div>
@@ -688,7 +696,7 @@
                 </div>
             </div>
 
-            <div class="text-center mt-5 mb-5">
+            <div class="project_git">
                 <h4 class="normal-font-size text-first pb-2">Confira meus projetos no GitHub</h4>
                 <div class="button-icon">
                     <a href="https://github.com/almeida-matheus" rel="noopener" target="_blank">
@@ -701,17 +709,16 @@
                     </a>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
-    <!--[FORM]-->
     <section id="contato" class="contact">
-        <div class="container animation-scroll mt-5">
+        <div class="container animation-scroll">
             <div class="h1-line">
                 <span>Contato</span>
             </div>
-            <div class="row justify-content-center mt-2 mb-1">
+            <div class="row justify-content-center mt-4 mb-1">
                 <div class="col-12 col-md-9">
                     <form action="https://formspree.io/f/mrgoegbl" method="POST" id="my-form">
                         <div class="form-row">
@@ -747,7 +754,7 @@
         </div>
         <!--// [FORMS]-->
 
-        <div class="text-center mt-3 pt-4 pb-4 email">
+        <div class="text-center mt-3 pt-4 pb-2 email">
             <div class="">
                 <span class="left-arrow text-first">
                     <<< </span>
@@ -774,13 +781,26 @@
 
     </section>
 
-    <!--[FOOTER]-->
-    <footer class="text-center text-first">
-            <p><a class="footer__link text-first" href="#">
+    <footer>
+        <p><a class="footer__link" href="#">
                 Matheus Almeida Costa</a> © 2021
-            </p>
+        </p>
     </footer>
-    <!--// [FOOTER]-->
+
+    <!--[LOADER]-->
+    <div class="container-loader">
+        <span class="loader">
+            <span class="loader-inner"></span>
+        </span>
+    </div>
+    <!--// [LOADER]-->
+    <!--[BTN SCROLL TOP]-->
+    <div class="to-top">
+        <a href="#" class="to-top__btn">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
+    <!-- // [BTN SCROLL TOP]-->
 
     <!--bootstrap javascript-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

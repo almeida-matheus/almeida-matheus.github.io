@@ -23,13 +23,13 @@ input[type="checkbox"] {
 	cursor: pointer;
 
 	outline: none;
-	background-color: #029C6C;
+	background-color: #00a000;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 
 	transition: .5s;
 }
 input:checked[type="checkbox"] {
-	background: #0080ff;
+	background: #0050ff;
 }
 input[type="checkbox"]:before {
 	content: '';

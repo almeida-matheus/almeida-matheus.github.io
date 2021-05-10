@@ -1,10 +1,11 @@
-/*===== LOADER ====*/
+/*===== LOADER =====*/
 // quando carregar o javascript exclui a div do loader
 window.addEventListener("load", function () {
     const cloader = document.querySelector(".container-loader");
     // loader.className += " hidden";
     cloader.parentElement.removeChild(cloader);
 });
+
 /*===== NAV ON SCROLL =====*/
 window.addEventListener('scroll', function () {
     let header = document.querySelector('.all-navbar');
@@ -12,22 +13,23 @@ window.addEventListener('scroll', function () {
     //só vai acionar o toogler quando o window.scrollY for maior q 0
     header.classList.toggle('scrolling-active', windowPosition);
 })
+
 /*===== SCROLL TO TOP BUTTON =====*/
-const btntoTop = document.querySelector(".btn-to-top");
+const btntoTop = document.querySelector(".to-top__btn");
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 1800) {
-    btntoTop.classList.add("active");
-  } 
-  else {
-    btntoTop.classList.remove("active");
-  }
+    if (window.pageYOffset > 2000) {
+        btntoTop.classList.add("active");
+    }
+    else {
+        btntoTop.classList.remove("active");
+    }
 })
+
 /*===== LIGHT MODE =====*/
 //Get our img element by using document.getElementById
 const img = document.getElementById('main-img')
 const html = document.querySelector('html')
 const checkbox = document.querySelector('#switch')
-
 //se a chave tiver algum valor = tema claro
 if (localStorage.getItem("theme")) {
     theme = localStorage.getItem("theme")
@@ -35,7 +37,6 @@ if (localStorage.getItem("theme")) {
     img.setAttribute('src', "../assets/logo_black.png");
     checkbox.checked = true;
 }
-
 //se o checkbox for clicado
 checkbox.addEventListener('change', function () {
     html.classList.toggle('light-mode')
@@ -57,17 +58,27 @@ checkbox.addEventListener('change', function () {
 const flag = document.querySelector(".flag-icon");
 
 flag.addEventListener("mouseover", function () {
-  flag.setAttribute('class', "flag-icon flag-icon-br")
+    flag.setAttribute('class', "flag-icon flag-icon-br")
 })
 flag.addEventListener("mouseout", function () {
-  flag.setAttribute('class', "flag-icon flag-icon-us")
+    flag.setAttribute('class', "flag-icon flag-icon-us")
 })
+
 /*===== TYPING ANIMATION =====*/
 var typed = new Typed(".typing", {
-  strings: ["Front-end Development", "Back-end Development", "Operational Systems", "Cybersecurity", "Computer network"],
-  typeSpeed: 100,
-  backSpeed: 60,
-  loop: true
+    strings: ["Front-end Development", "Back-end Development", "Operational Systems", "Cybersecurity", "Computer network"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+/*===== OWL CAROUSEL ANIMATION =====*/
+$(".owl-slider").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000, //3000ms = 3s;
+    autoplayHoverPause: true,
+    items: 4,
 });
 
 /*===== SCROLL REVEAL ANIMATION =====*/
