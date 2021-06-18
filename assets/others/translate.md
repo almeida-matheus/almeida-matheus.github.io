@@ -14,7 +14,8 @@ I study <span class="typing"></span>
             I am currently graduating in information security.<br>
             I have a lot of interest in information technology, so I'm always studying
             and improving my knowledge in this area, I even share some of that in my
-            <a href="https://blog.matheustech.com.br" rel="noopener" target="__blank">blog</a>.<br>
+            <a class="about__link" href="https://blog.matheustech.com.br" rel="noopener"
+                                target="__blank">blog</a>.<br>
             Nowadays my focus of learning is web development, linux and cyber security.<br>
           </p>
 ```
