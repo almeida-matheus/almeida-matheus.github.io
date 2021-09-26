@@ -822,6 +822,11 @@ hr {
     width: 100%;
 }
 
+.devicon-bash-plain {
+    font-size: 32px;
+    padding-right: 8px;
+}
+
 /*// KNOW*/
 
 /* BUTTON GITHUB*/
@@ -911,15 +916,10 @@ hr {
     }
 }
 
-/* .button-icon button:focus {
-    text-decoration: none;
-    box-shadow: none;
-    border: #ddd 1px solid;
-    border-width: 0;
+.button-icon .git:focus{
+    border-right: 2px solid #66666666;
     outline: 0 !important;
-    outline-width: 0;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
-} */
+}
 
 /* BUTTON GITHUB*/
 
