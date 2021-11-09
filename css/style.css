@@ -9,12 +9,9 @@ html {
 * {
     margin: 0;
     padding: 0;
-    /* font-family: "Montserrat", sans-serif; */
-    /* font-family: 'Fira Code', sans-serif; */
 }
 
 body {
-    /* switch color transition*/
     transition: ease .8s;
     /* transition: all 1s cubic-bezier(.25,.8,.25,1); */
 }
@@ -23,37 +20,39 @@ body {
 :root {
     /*bg color*/
     --bg-first1: #181818;
-    --bg-first2: #212121;
-    --bg-second1: #006600; /* --bg-fifth: #006600; */
-    --bg-second2: #00a000; /*--bg-third: #00a000;*/
-    --bg-third1: #323232; /*--bg-second: #323232;*/
-    --bg-third2: #323232; /*--bg-second: #323232;*/
-    --bg-first-opp: #cccccc; /*--bg-fourth: #cccccc;*/
+    --bg-first2: #262626;
+    --bg-second1: #006600;
+    --bg-second2: #00a000;
+    --bg-third1: #343434;
+    --bg-third2: #343434;
+    --bg-first-opp: #ddd;
+    --bg-white: #e1e1e1;
     /*text color*/
     --text-first1: #ffffff;
-    --text-first2: #e5e5e5; /*--text-first: #e5e5e5;*/
-    --text-second1: #006600;   /*--text-fifth: #006600;*/
-    --text-second2: #00a000;    /*--text-third: #00a000;*/
-    --text-third1: #b7b7b7;  /*--text-second: #b7b7b7;*/
-    --text-first-opp: #212121;    /*--text-fourth: #212121;*/
+    --text-first2: #e5e5e5;
+    --text-second1: #006600;
+    --text-second2: #00a000;
+    --text-third1: #b7b7b7;
+    --text-first-opp: #212121;
 }
 
 .light-mode:root {
     /*bg color*/
-    --bg-first1: #ffffff;
+    --bg-first1: #f1f1f1;
     --bg-first2: #e4e4e4;
-    --bg-second1: #0000cc; /* --bg-fifth: #006600; */
-    --bg-second2: #0040ff; /*--bg-third: #00a000;*/
-    --bg-third1: #cccccc; /*--bg-second: #323232;*/
-    --bg-third2: #dfdfdf; /*--bg-second: #323232;*/
-    --bg-first-opp: #212121; /*--bg-fourth: #cccccc;*/
+    --bg-second1: #0000cc;
+    --bg-second2: #1a53ff;
+    --bg-third1: #cccccc;
+    --bg-third2: #dfdfdf;
+    --bg-first-opp: #212121;
+    --bg-white: #fff;
     /*text color*/
-    --text-first1: #212121; 
-    --text-first2: #212121; /*--text-first: #e5e5e5;*/
-    --text-second1: #0000cc;   /*--text-fifth: #006600;*/
-    --text-second2: #0040ff;    /*--text-third: #00a000;*/
-    --text-third1: #b7b7b7;  /*--text-second: #b7b7b7;*/
-    --text-first-opp: #e5e5e5;    /*--text-fourth: #212121;*/
+    --text-first1: #212121;
+    --text-first2: #212121;
+    --text-second1: #0040ff;
+    --text-second2: #1a53ff;
+    --text-third1: #b7b7b7;
+    --text-first-opp: #e5e5e5;
 }
 
 .text-first {
@@ -134,7 +133,7 @@ footer{
 }
 
 .h1-line span {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 600;
     color: var(--text-first2);
     position: relative;
@@ -346,8 +345,8 @@ hr {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--bg-first-opp);
-        color: var(--text-first-opp);
+        background-color: #ccc;
+        color: #333;
         box-shadow: 1px 1px 1px 1px black;
         border-radius: 3px;
         font-size: 26px;
@@ -627,7 +626,7 @@ hr {
 
 .project1__wrapper .project1__description {
     font-size: 13px;
-    color: #999;
+    color: #777;
 }
 .project1__wrapper .project1__footer{
     border-top: 1px solid #D4D4D4;
@@ -981,6 +980,11 @@ hr {
     color: var(--text-second1);
 }
 
+#contato input,
+#contato textarea {
+    background-color: var(--bg-white);
+}
+
 /*! FOOTER*/
 footer {
     padding: 20px 0;
@@ -1125,3 +1129,26 @@ footer .footer__link:hover {
 }
 
 /*// ANIMATION >><<*/
+
+/*! SCROLL BAR */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bg-second1) var(--bg-third1); /* scroll thumb and track */
+}
+
+/* Works on Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--bg-third1); /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--bg-second2); /* color of the scroll thumb */
+    border-radius: 5px; /* roundness of the scroll thumb */
+}
+
+/*// SCROLL BAR */
