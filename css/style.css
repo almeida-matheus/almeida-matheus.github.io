@@ -21,16 +21,16 @@ body {
     /*bg color*/
     --bg-first1: #181818;
     --bg-first2: #262626;
-    --bg-second1: #006600;
+    --bg-second1: #328432 ;
     --bg-second2: #00a000;
-    --bg-third1: #343434;
+    --bg-third1: #3f3f3f;
     --bg-third2: #343434;
     --bg-first-opp: #ddd;
     --bg-white: #e1e1e1;
     /*text color*/
     --text-first1: #ffffff;
     --text-first2: #e5e5e5;
-    --text-second1: #006600;
+    --text-second1: #328432;
     --text-second2: #00a000;
     --text-third1: #b7b7b7;
     --text-first-opp: #212121;
@@ -40,10 +40,10 @@ body {
     /*bg color*/
     --bg-first1: #f1f1f1;
     --bg-first2: #e4e4e4;
-    --bg-second1: #0000cc;
+    --bg-second1: #0000ff;
     --bg-second2: #1a53ff;
     --bg-third1: #cccccc;
-    --bg-third2: #dfdfdf;
+    --bg-third2: #857777;
     --bg-first-opp: #212121;
     --bg-white: #fff;
     /*text color*/
@@ -170,17 +170,12 @@ hr {
 }
 
 .h2-line {
-    /* text-align: center; */
-    display: flex;
-    justify-content: start;
-
-    /* border-bottom: 2px solid #fff; */
-
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--text-first2);
     position: relative;
     display: inline;
+    border-bottom: 2px solid var(--text-first2);
     /*se for h1*/
     word-wrap: break-word;
 
@@ -512,7 +507,7 @@ hr {
     color: var(--text-second2);
 }
 
-.about p {
+.about .about__div-text p {
     border-left: solid 1px;
     font-size: 1.25rem;
 }
@@ -608,7 +603,7 @@ hr {
     padding: 15px;
     width: 100%;
 
-    background-color: #fff;
+    background-color: var(--bg-white);
     /* box-shadow: -1px -1px 6px rgba(0, 0, 0, 0.1); */
     box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     transition: bottom 0.6s ease;
@@ -626,10 +621,10 @@ hr {
 
 .project1__wrapper .project1__description {
     font-size: 13px;
-    color: #777;
+    color: #444;
 }
 .project1__wrapper .project1__footer{
-    border-top: 1px solid #D4D4D4;
+    border-top: 1px solid #B4B4B4;
     display: flex;
     justify-content: center;
     padding: 15px 0 0 0; /*15px do wapper*/
@@ -640,6 +635,7 @@ hr {
     text-decoration: none;
 
     color: var(--text-second2);
+    font-weight: 600;
 }
 
 .project2__card {
@@ -983,6 +979,7 @@ hr {
 #contato input,
 #contato textarea {
     background-color: var(--bg-white);
+    resize: none;
 }
 
 /*! FOOTER*/
@@ -1148,7 +1145,7 @@ body::-webkit-scrollbar-track {
   
 body::-webkit-scrollbar-thumb {
     background-color: var(--bg-second2); /* color of the scroll thumb */
-    border-radius: 5px; /* roundness of the scroll thumb */
+    /* border-radius: 5px; */
 }
 
 /*// SCROLL BAR */

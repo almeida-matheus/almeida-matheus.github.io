@@ -36,6 +36,8 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./css/toggler.css'>
     <!--CSS custom-->
     <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+    <!--CSS line-->
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/line.css'>
     <!--CSS normalize-->
     <link rel='stylesheet' type='text/css' media='screen' href='./css/normalize.css'>
     <!--CSS bootstrap-->
@@ -149,7 +151,7 @@
                 <span class="text-first mb-5 ">SOBRE MIM</span>
             </div>
 
-            <div class="row d-flex justify-content-center pb-5 mb-3">
+            <div class="row d-flex justify-content-center mb-3">
 
                 <div class="col-md-4 text-center text-md-right animation-img-about">
                     <img class="img-fluid" src="./assets/profile_about.jpg" alt="matheus almeida costa"
@@ -158,7 +160,7 @@
 
                 <div class="col-md-8">
 
-                    <div class="animation-text-about">
+                    <div class="animation-text-about about__div-text">
                         <h4 class="text-first normal-font-size font-weight-bolder pl-md-3 pb-3 pt-4 pt-md-0">
                             Estudo <span class="typing"></span>
                         </h4>
@@ -169,7 +171,7 @@
                             e aperfeiçoando meus conhecimentos nessa área, inclusive compartilho um pouco disso no meu
                             <a class="about__link" href="https://blog.matheustech.com.br" rel="noopener"
                                 target="__blank">blog</a>.<br>
-                            Atualmente meu foco de aprendizado é AWS, python, shell script e segurança da
+                            Atualmente meu foco de aprendizado é AWS, python e segurança da
                             informação em geral.<br>
                             <!-- (programação, redes de computadores, sistemas operacionais, hacking, computação em nuvem, hardwares).
                             Atualmente meu foco de aprendizado é desenvolvimento web e servidores linux. -->
@@ -184,7 +186,105 @@
 
                 </div>
             </div>
+
         </div>
+        <!-- TIME LINE -->
+
+        <div class="timeline animation-scroll">
+            <div class="h2-line">
+                Linha do tempo
+            </div>
+        </div>
+
+        <div class="timeline animation-scroll">
+            <div class="timeline__center-line">
+              <!-- <a href="#" class="timeline__scroll-icon"><i class="fas fa-caret-up"></i></a> -->
+            </div>
+            <div class="timeline__row row-1">
+              <section>
+                <i class="timeline__icon fas fa-graduation-cap"></i>
+                <div class="timeline__details">
+                  <span class="timeline__title">Curso - Eletrônica</span>
+                  <span class="timeline__date">2017 - 2019</span>
+                </div>
+                <p>Curso técnico em eletrônica, meu foco foram nas disciplinas que envolviam programação (C) e redes.</p>
+                <div class="timeline__bottom">
+                  <!-- <a href="http://www.coltec.ufmg.br/coltec-ufmg/?page_id=63" rel="noopener"
+                  target="__blank">Sobre</a> -->
+                  <span></span>
+                  <b>COLTEC - UFMG</b>
+                </div>
+              </section>
+            </div>
+            <div class="timeline__row row-2">
+              <section>
+                <i class="timeline__icon fas fa-briefcase"></i>
+                <div class="timeline__details">
+                  <span class="timeline__title">Estágio - Técnico de Eletrônica</span>
+                  <span class="timeline__date">2019 - 2020</span>
+                </div>
+                <p>Atuei no hardware do produto, isso envolveu layout de PCB com Autodesk Eagle e desenvolvimento para microcontroladores Arduino.</p>
+                <div class="timeline__bottom">
+                  <!-- <a href="https://blog.matheustech.com.br/post/estagiario-tecnico-em-eletronica/" rel="noopener"
+                  target="__blank">Sobre</a> -->
+                  <span></span>
+                  <b>FW&HW Sistemas</b>
+                </div>
+              </section>
+            </div>
+            <div class="timeline__row row-1">
+              <section>
+                <i class="timeline__icon fas fa-graduation-cap"></i>
+                <div class="timeline__details">
+                  <span class="timeline__title">Curso - Segurança da Informação</span>
+                  <span class="timeline__date">2020 - 2022</span>
+                </div>
+                <p>Curso superior - técnologo, aprendi as bases de segurança da informaçao em geral.</p>
+                <div class="timeline__bottom">
+                  <!-- <a href="https://www.uninove.br/cursos/graduacao/presencial/tecnologia-em-seguranca-da-informacao" rel="noopener"
+                  target="__blank">Sobre</a> -->
+                  <b>UNINOVE</b>
+                </div>
+              </section>
+            </div>
+            <div class="timeline__row row-2">
+              <section>
+                <i class="timeline__icon fas fa-briefcase"></i>
+                <div class="timeline__details">
+                  <span class="timeline__title">Estágio - Desenvolvedor Web</span>
+                  <span class="timeline__date">2021</span>
+                </div>
+                <p>Atuei como desenvolvedor back-end utilizando técnologias como C#, .Net, SQL Server com a metológia Scrum.</p>
+                <div class="timeline__bottom">
+                  <!-- <a href="https://pris.com.br/" rel="noopener"
+                  target="__blank">Sobre</a> -->
+                  <span></span>
+                  <b>Pris Software</b>
+                </div>
+              </section>
+            </div>
+            <div class="timeline__row row-1">
+              <section>
+                <i class="timeline__icon fas fa-briefcase"></i>
+                <div class="timeline__details">
+                  <span class="timeline__title">Estágio - Segurança da Informação</span>
+                  <span class="timeline__date">2021 - Hoje</span>
+                </div>
+                <p>Atuei no departamento de segurança em nuvem/devsecops.</p>
+                <p>Realizei diversas atividades na AWS, foco em resolução de problemas e automatização de processos por meio da programação.</p>
+                <p>Principais tecnologias que fizeram parte do meu dia a dia: <br>
+                Python, Shell Script, Javascript, AWS CLI, Lambda, IAM, SSO, ACM, Prisma, Certificados, Terraform, Git, GitLab.</p>
+                <div class="timeline__bottom">
+                  <!-- <a href="https://www.bancointer.com.br/" rel="noopener"
+                  target="__blank">Sobre</a> -->
+                  <span></span>
+                  <b>Banco Inter</b>
+                </div>
+              </section>
+            </div>
+          </div>
+        <!--// TIME LINE-->
+
     </section>
 
     <section id="habilidades" class="skill">
@@ -520,7 +620,7 @@
             </div>
 
             <!-- <div class="h2-line">
-                Desenvolvimento WEB
+                Back-end
             </div>
             <hr/> -->
 
@@ -640,7 +740,7 @@
                         <div class="project1__body">
                             <div class="project1__wrapper">
                                 <p class="project1_title">Swap Role</p>
-                                <p class="project1__description">Extensão de navegador para alternar entre roles da AWS</p>
+                                <p class="project1__description">Extensão de navegador para facilitar o ato de alternar entre roles da AWS</p>
                                 <div class="project1__footer">
                                     <a class="" rel="noopener" target="_blank"
                                         href="https://github.com/almeida-matheus/swap-role">
@@ -761,7 +861,7 @@
                         <div class="project1__body">
                             <div class="project1__wrapper">
                                 <p class="project1_title">Playlist Reader</p>
-                                <p class="project1__description">CLI e API em python para gerar informações de uma playlist do youtube</p>
+                                <p class="project1__description">CLI e API em python para gerar informações de uma playlist do youtube com a finalidade de salvar os títulos</p>
                                 <div class="project1__footer">
                                     <a class="" rel="noopener" target="_blank"
                                         href="https://github.com/almeida-matheus/playlist-reader">
@@ -781,7 +881,7 @@
                         <div class="project1__body">
                             <div class="project1__wrapper">
                                 <p class="project1_title">CERTSCAN</p>
-                                <p class="project1__description">CLI em python para obter informações de certificado SSL de domínios web</p>
+                                <p class="project1__description">CLI em python para obter informações de um certificado SSL local ou pelo domínio web</p>
                                 <div class="project1__footer">
                                     <a class="" rel="noopener" target="_blank"
                                         href="https://github.com/almeida-matheus/certscan">
@@ -837,7 +937,7 @@
                             <div class="form-group col-12 mt-3">
                                 <label for="message" class="text-first">Mensagem</label>
                                 <textarea name="message" id="message" class="form-control" rows="6" placeholder="..."
-                                    required></textarea>
+                                    spellcheck="false" required></textarea>
                             </div>
 
                             <div class="col-12 text-center">
