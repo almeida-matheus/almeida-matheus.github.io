@@ -705,6 +705,7 @@ hr {
     border-radius: 20px;
     background-color: var(--bg-third1);
     /* box-shadow:  0 .5rem 1rem rgba(black, .15); */
+    cursor: pointer;
     transition: all 0.5s ease;
 }
 
@@ -817,9 +818,16 @@ hr {
     width: 100%;
 }
 
-.devicon-bash-plain {
+.devicon-bash-plain,
+.devicon-flask-original {
     font-size: 32px;
     padding-right: 8px;
+}
+
+svg path {
+    fill: var(--bg-first-opp) !important;
+    /* --color_fill: #fff !important;
+    color: #fff !important; */
 }
 
 /*// KNOW*/
@@ -1043,6 +1051,41 @@ footer .footer__link:hover {
     /*esta linha é a que clareia a imagem*/
 }
 /*// HOVER IMG*/
+
+/* MODAL */
+.modal .modal-content {
+    background-color: var(--bg-third1);
+    color: var(--text-first2);
+}
+
+.modal .modal-content .close {
+    color: var(--text-first2);
+    opacity: 1;
+}
+
+.modal .modal-content .progress {
+    width: 100%;
+}
+.modal .modal-content .progress-bar {
+    background-color: var(--bg-second2);
+    width: 100%;
+}
+
+.modal-content .modal-header{
+    border-bottom: 2px solid var(--bg-second1);
+}
+
+.modal-content .modal-footer{
+    border-top: 2px solid var(--bg-second1);
+}
+
+/* prevent page scrolling when a modal is open */
+.modal-open{
+    padding:0 !important;
+    overflow-y: auto;
+}
+
+/* //MODAL */
 
 /*ANIMATION CONTACT*/
 #status {
