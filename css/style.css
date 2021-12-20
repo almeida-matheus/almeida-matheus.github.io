@@ -13,6 +13,7 @@ html {
 
 body {
     transition: ease .8s;
+    font-family: 'Fira Code', sans-serif !important;
     /* transition: all 1s cubic-bezier(.25,.8,.25,1); */
 }
 
@@ -74,7 +75,7 @@ body {
         font-size: 1.5rem !important;
     }
     .normal-font-size {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .about p {
         border-left: none !important;
@@ -93,35 +94,29 @@ body {
 }
 /*SECTIONS*/
 header{
-    font-family: 'Fira Code', sans-serif;
+
 }
 section.main{
     background-color: var(--bg-first1);
-    font-family: 'Fira Code', sans-serif;
 }
 section.about{
     background-color: var(--bg-first2);
     padding: 28px 0 10px 0;
-    font-family: 'Fira Code', sans-serif;
 }
 section.skill{
     background-color: var(--bg-first1);
     padding: 28px 0 60px 0;
-    font-family: 'Fira Code', sans-serif;
 }
 section.projects{
     background-color: var(--bg-first2);
     padding: 28px 0;
-    font-family: 'Fira Code', sans-serif;
 }
 section.contact{
     background-color: var(--bg-first1);
     padding: 28px 0;
-    /* font-family: 'Fira Code', sans-serif; */
 }
 footer{
     background-color: var(--bg-first2);
-    font-family: 'Fira Code', sans-serif;
 }
 /*//SECTIONS COLOR*/
 
@@ -217,7 +212,6 @@ hr {
     padding-right: 2px;
     font-size: 1rem;
     font-weight: bold;
-    /* font-family: 'Source Code Pro', monospace; */
     transition: all 0.3s;
     margin-bottom: 0.3rem;
 }
@@ -505,6 +499,10 @@ hr {
 
 .typing {
     color: var(--text-second2);
+}
+
+.about .container {
+    padding-bottom: 25px;
 }
 
 .about .about__div-text p {
@@ -971,6 +969,11 @@ svg path {
     .btn-contact {
         font-size: 15px;
     }
+    /* .left-arrow,
+    .right-arrow {
+        display: none;
+        visibility: hidden;
+    } */
 }
 
 /*// BTN CONTACT*/
@@ -1133,14 +1136,14 @@ footer .footer__link:hover {
 } */
 
 .right-arrow {
-    right: 15%;
+    right: 10%;
     animation: simple 1s linear infinite;
     display: inline-block;
     font-size: 1.5rem;
 }
 
 .left-arrow {
-    left: 15%;
+    left: 10%;
     animation: simple1 1s linear infinite;
     display: inline-block;
     font-size: 1.5rem;
@@ -1148,22 +1151,22 @@ footer .footer__link:hover {
 
 @keyframes simple {
     50% {
-        transform: translateX(20px);
+        transform: translateX(10px);
         opacity: 0.5;
     }
     100% {
-        transform: translateX(20px);
+        transform: translateX(10px);
         opacity: 0;
     }
 }
 
 @keyframes simple1 {
     50% {
-        transform: translateX(-20px);
+        transform: translateX(-10px);
         opacity: 0.5;
     }
     100% {
-        transform: translateX(-20px);
+        transform: translateX(-10px);
         opacity: 0;
     }
 }
