@@ -455,7 +455,7 @@ hr {
     /* color: #fff; */
 }
 
-.main  .fab, .main  .fas {
+.main  .fab, .main  .fas, .main  .fa-brands {
     text-align: center;
     margin: 5px;
     /**/
@@ -485,6 +485,10 @@ hr {
 
 .main .fa-youtube:hover {
     color: #c4302b !important;
+}
+
+.main .fa-medium-m:hover {
+    color: #009F00 !important;
 }
 
 .main .fab:hover, .main .fas:hover {
