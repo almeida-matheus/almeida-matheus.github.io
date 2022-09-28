@@ -529,21 +529,45 @@ hr {
     text-decoration: none;
     color: var(--text-second1);
 }
-.about .about__btn a{
+
+.about .about__btn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.about .about__btn .about__curriculum a{
+    position: relative;
     display: inline-block;
     background-color: var(--bg-second1);
     color: #fff;
     text-decoration: none;
-    margin-top: 30px;
+    margin-top: 28px;
     padding: 12px;
     border-radius: 5px;
 
     transition: all ease 0.4s;
-}   
-.about .about__btn a:hover {
+}
+
+.about .about__btn .about__curriculum a:hover {
     background-color: var(--bg-second2);
 }
 
+.about .about__btn .about_certs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:512px){
+    .about .about__btn {
+        flex-direction: column;
+    }
+
+    .about .about__btn .about_certs {
+        margin-top: 54px;
+    }
+}
 /*//ABOUT ME*/
 
 /*PROJECTS*/
