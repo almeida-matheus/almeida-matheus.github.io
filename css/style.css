@@ -557,6 +557,8 @@ hr {
     position: relative;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 0px;
 }
 
 @media screen and (max-width:512px){
@@ -795,6 +797,11 @@ hr {
 .title-know {
     font-size: 1.5rem;
     border-bottom: 1px solid var(--text-first2);
+}
+
+.owl-stage {
+    cursor: grab;
+    /* cursor: move; */
 }
 
 .skills__data {
