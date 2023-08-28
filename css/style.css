@@ -233,6 +233,10 @@ hr {
     font-size: 20px;
 }
 
+.navbar-brand .navbar-toggler {
+    margin-bottom: 5px;
+}
+
 @keyframes fa-blink {
     0% {
         opacity: 1;
