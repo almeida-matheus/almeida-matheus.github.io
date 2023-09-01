@@ -168,11 +168,17 @@ hr {
     font-size: 2rem;
     font-weight: 700;
     color: var(--text-first2);
-    position: relative;
-    display: inline;
-    border-bottom: 2px solid var(--text-first2);
+    /* position: relative;
+    display: inline; */
+
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+
+    /* border-bottom: 2px solid var(--text-first2); */
+    border-bottom: 2px solid var(--bg-second1);
     /*se for h1*/
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
 
     margin: 0;
     padding: 0;
@@ -557,7 +563,7 @@ hr {
     background-color: var(--bg-second2);
 }
 
-.about .about__btn .about_certs {
+.about_certs {
     position: relative;
     display: flex;
     justify-content: center;
@@ -570,7 +576,7 @@ hr {
         flex-direction: column;
     }
 
-    .about .about__btn .about_certs {
+    .about_certs {
         margin-top: 54px;
     }
 }
