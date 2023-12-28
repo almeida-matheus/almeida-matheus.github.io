@@ -471,7 +471,6 @@ hr {
     /**/
     line-height: 50px;
     font-size: 20px;
-    font-weight: bold;
     width: 50px;
     height: 50px;
     border-radius: 5px;
@@ -495,6 +494,10 @@ hr {
 
 .main .fa-medium-m:hover {
     color: #009F00 !important;
+}
+
+.main .fa-dev:hover{
+    color: #323232 !important;
 }
 
 .main .fab:hover, .main .fas:hover {
@@ -860,7 +863,8 @@ hr {
 .devicon-bash-plain,
 .devicon-flask-original,
 .devicon-fastapi-plain,
-.devicon-kubernetes-plain {
+.devicon-kubernetes-plain,
+.devicon-grafana-original {
     font-size: 32px;
     padding-right: 8px;
 }
