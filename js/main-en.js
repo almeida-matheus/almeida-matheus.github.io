@@ -156,3 +156,18 @@ function ajax(method, url, data, success, error) {
 }
 //adicionar a url form-s endpoint no action e metodo post e id="my-form"
 //copiar o <script> na aba ajax do formspree e colar aqui
+
+/*===== CONTEXT MENU =====*/
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+
+    var customMessage = document.getElementById('context-message');
+    customMessage.innerHTML = ':)';
+    customMessage.style.display = 'block';
+    customMessage.style.left = event.clientX + 'px';
+    customMessage.style.top = event.clientY + 'px';
+
+    setTimeout(function() {
+        customMessage.style.display = 'none';
+    }, 500);
+});
