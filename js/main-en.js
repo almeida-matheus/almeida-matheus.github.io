@@ -28,6 +28,7 @@ window.addEventListener("scroll", () => {
 /*===== LIGHT MODE =====*/
 //Get our img element by using document.getElementById
 const img = document.getElementById('main-img')
+const img_aws_cb = document.getElementById('img-aws-community-builders')
 const html = document.querySelector('html')
 const checkbox = document.querySelector('#switch')
 //se a chave tiver algum valor = tema claro
@@ -35,6 +36,7 @@ if (localStorage.getItem("theme")) {
     theme = localStorage.getItem("theme")
     html.classList.toggle(theme)
     img.setAttribute('src', "../assets/logo_black.png");
+    img_aws_cb.setAttribute('src', "../assets/honors/90/aws-community-builders-logo-dark.png");
     checkbox.checked = true;
 }
 //se o checkbox for clicado
@@ -45,11 +47,13 @@ checkbox.addEventListener('change', function () {
     // if (html.getAttribute('class')=="sr light-mode") {
     if (html.classList[1] == 'light-mode') {
         img.setAttribute('src', "../assets/logo_black.png");
+        img_aws_cb.setAttribute('src', "../assets/honors/90/aws-community-builders-logo-dark.png");
         localStorage.setItem("theme", "light-mode")
         // img.src="./img/logo_black.png"
     }
     else {
         img.setAttribute('src', "../assets/logo_white.png");
+        img_aws_cb.setAttribute('src', "../assets/honors/90/aws-community-builders-logo-light.png");
         localStorage.setItem("theme", "")
     }
 })

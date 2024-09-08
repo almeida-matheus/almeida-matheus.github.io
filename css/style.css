@@ -33,6 +33,7 @@ body {
     --text-first2: #e5e5e5;
     --text-second1: #328432;
     --text-second2: #00a000;
+    --text-second3: #3dbd3d;
     --text-third1: #b7b7b7;
     --text-first-opp: #212121;
 }
@@ -42,7 +43,7 @@ body {
     --bg-first1: #f1f1f1;
     --bg-first2: #e4e4e4;
     --bg-second1: #0000ff;
-    --bg-second2: #1a53ff;
+    --bg-second2: #2B519F;
     --bg-third1: #cccccc;
     --bg-third2: #857777;
     --bg-first-opp: #212121;
@@ -51,7 +52,8 @@ body {
     --text-first1: #212121;
     --text-first2: #212121;
     --text-second1: #0040ff;
-    --text-second2: #1a53ff;
+    --text-second2: #2B519F;
+    --text-second3: #4169e1;
     --text-third1: #b7b7b7;
     --text-first-opp: #e5e5e5;
 }
@@ -529,13 +531,13 @@ hr {
 } */
 
 .about img {
-    max-height: 400px;
+    max-height: 500px;
     border-radius: 10px;
 }
 
 .about .about__link {
     text-decoration: none;
-    color: var(--text-second2);
+    color: var(--text-second3);
 }
 
 .about .about__link:hover {
@@ -544,9 +546,9 @@ hr {
 }
 
 .about .about__btn {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
 }
 
 .about .about__btn .about__curriculum a{
@@ -564,6 +566,8 @@ hr {
 
 .about .about__btn .about__curriculum a:hover {
     background-color: var(--bg-second2);
+    color: #fff;
+    cursor: pointer;
 }
 
 .about_certs {
@@ -575,9 +579,9 @@ hr {
 }
 
 @media screen and (max-width:512px){
-    .about .about__btn {
+    /* .about .about__btn {
         flex-direction: column;
-    }
+    } */
 
     .about_certs {
         margin-top: 54px;
@@ -1066,6 +1070,13 @@ footer .footer__link:hover {
 /*// FOOTER*/
 
 /* MODAL */
+@media (min-width: 576px) {
+    .modal  .modal-dialog {
+        max-width: 650px;
+        margin: 1.75rem auto;
+    }
+}
+
 .modal .modal-content {
     background-color: var(--bg-third1);
     color: var(--text-first2);
@@ -1090,6 +1101,16 @@ footer .footer__link:hover {
 
 .modal-content .modal-footer{
     border-top: 2px solid var(--bg-second1);
+}
+
+.modal .modal-content .about__link {
+    text-decoration: none;
+    color: var(--text-second3);
+}
+
+.modal .modal-content .about__link:hover {
+    text-decoration: none;
+    color: var(--text-second1);
 }
 
 /* prevent page scrolling when a modal is open */
