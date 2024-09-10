@@ -1080,6 +1080,7 @@ footer .footer__link:hover {
 .modal .modal-content {
     background-color: var(--bg-third1);
     color: var(--text-first2);
+    word-wrap: break-word;
 }
 
 .modal .modal-content .close {
