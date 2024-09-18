@@ -159,20 +159,29 @@ body {
 .timeline__row section p{
     margin: 10px 0 17px 0;
 }
-.timeline__row section .timeline__bottom a{
-    text-decoration: none;
+.timeline__row section .timeline__bottom .timeline__bottom_one{
     background: var(--bg-second1);
-    color: #fff;
     padding: 7px 15px;
     border-radius: 5px;
     /* font-size: 17px; */
     font-weight: 400;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
-.timeline__row section .timeline__bottom a:hover{
+.timeline__row section .timeline__bottom .timeline__bottom_one a{
+    text-decoration: none;
+    color: #fff;
+}
+.timeline__row section .timeline__bottom .timeline__bottom_one:hover{
     transform: scale(0.97);
     background-color: var(--bg-second2);
 }
+.timeline__row section .timeline__bottom .timeline__bottom_group{
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 0.2rem;
+}
+
 @media(max-width: 790px){
     .timeline__timeline .timeline__center-line{
         left: 40px;
