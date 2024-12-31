@@ -578,6 +578,10 @@ hr {
     gap: 10px 0px;
 }
 
+.about_certs.certification_badge img {
+    width: 102px;
+}
+
 @media screen and (max-width:512px){
     /* .about .about__btn {
         flex-direction: column;
