@@ -70,7 +70,7 @@ flag.addEventListener("mouseout", function () {
 
 /*===== TYPING ANIMATION =====*/
 var typed = new Typed(".typing", {
-    strings: ["Analista SRE", "Analista DevSecOps", "Analista de Cibersegurança ", "Desenvolvedor Back-end", "Desenvolvedor Front-end"],
+    strings: ["Engenheiro de Plataformas", "Engenheiro DevSecOps", "Engenheiro de Cibersegurança ", "Engenheiro de Software"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
