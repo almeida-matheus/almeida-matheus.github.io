@@ -65,7 +65,7 @@ flag.addEventListener("mouseover", function () {
     flag.setAttribute('class', "flag-icon flag-icon-br")
 })
 flag.addEventListener("mouseout", function () {
-    flag.setAttribute('class', "flag-icon flag-icon-us")
+    flag.setAttribute('class', "flag-icon flag-icon-br")
 })
 
 /*===== TYPING ANIMATION =====*/
