@@ -61,8 +61,8 @@ body {
 } */
 .timeline{
     max-width: 1080px;
-    margin: 50px auto;
-    padding: 0 20px;
+    margin: 35px auto;
+    /* padding: 0 20px; */
     position: relative;
 }
 .timeline .timeline__center-line{

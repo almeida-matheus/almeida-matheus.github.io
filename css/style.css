@@ -517,7 +517,7 @@ hr {
 }
 
 .about .container {
-    padding-bottom: 25px;
+    padding-bottom: 0px;
 }
 
 .about .about__div-text p {
@@ -581,6 +581,11 @@ hr {
 
 .about_certs.certification_badge img {
     width: 122px;
+}
+
+.about_certs #img-kubernetes-kubestronaut {
+    width: 100px;
+    margin-left: 20px;
 }
 
 @media screen and (max-width:512px){
